@@ -15,7 +15,7 @@ export default function Header() {
           <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
               <Link
-                href="/it-service-management"
+                href="/itsm"
                 className="btn-sm bg-white text-gray-800 shadow hover:bg-gray-50"
               >
                 IT Service Management
@@ -23,7 +23,7 @@ export default function Header() {
             </li>
             <li>
               <Link
-                href="/ehs-incident-management"
+                href="/ehs"
                 className="btn-sm bg-gray-800 text-gray-200 shadow hover:bg-gray-900"
               >
                 EHS Incident Management

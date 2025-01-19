@@ -70,7 +70,7 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              Building an Ecosystem for <br className="max-lg:hidden" />
+              Incident Management for <br className="max-lg:hidden" />
               Learning and Efficiency
             </h1>
             <div className="mx-auto max-w-3xl">
@@ -109,7 +109,7 @@ export default function HeroHome() {
             </div>
           </div>
           {/* Hero image */}
-          <div
+          {/* <div
             className="mx-auto max-w-3xl"
             data-aos="zoom-y-out"
             data-aos-delay={600}
@@ -158,7 +158,7 @@ export default function HeroHome() {
                 <br />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

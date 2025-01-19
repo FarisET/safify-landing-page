@@ -8,6 +8,14 @@ import Logo06 from "@/public/images/logo-06.svg";
 import Logo07 from "@/public/images/logo-07.svg";
 import Logo08 from "@/public/images/logo-08.svg";
 import Logo09 from "@/public/images/logo-09.svg";
+import SafifyLogo from '@/public/images/safify-logo.png'
+import SafifyIcon from '@/public/images/safify-icon.svg'
+import SafifyPPEIcon from '@/public/images/safify-ppe-icon.svg'
+import SafifyHealthIcon from '@/public/images/safify-health-icon.svg'
+import SafifyConstructionIcon from '@/public/images/safify-construction-icon2.svg'
+import SafifyAiIcon from '@/public/images/safify-AI-Icon.svg'
+import SafifyItIcon from '@/public/images/safify-it-icon.svg'
+import SafifySafetyIcon from '@/public/images/safety icon.svg'
 
 export default function BusinessCategories() {
   return (
@@ -179,10 +187,10 @@ export default function BusinessCategories() {
                 <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                   <Image
                     className="relative"
-                    src={Logo01}
-                    width={32}
-                    height={32}
-                    alt="Logo 01"
+                    src={SafifyIcon}
+                    width={48}
+                    height={48}
+                    alt="Safify Logo"
                   />
                 </div>
               </div>
@@ -195,7 +203,7 @@ export default function BusinessCategories() {
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                       <Image
                         className="relative"
-                        src={Logo02}
+                        src={SafifySafetyIcon}
                         width={23}
                         height={22}
                         alt="Logo 02"
@@ -208,9 +216,9 @@ export default function BusinessCategories() {
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                       <Image
                         className="relative"
-                        src={Logo03}
-                        width={22}
-                        height={22}
+                        src={SafifySafetyIcon}
+                        width={32}
+                        height={32}
                         alt="Logo 03"
                       />
                     </div>
@@ -221,10 +229,10 @@ export default function BusinessCategories() {
                     <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                       <Image
                         className="relative"
-                        src={Logo04}
-                        width={24}
-                        height={22}
-                        alt="Logo 04"
+                        src={SafifyItIcon}
+                        width={48}
+                        height={48}
+                        alt="IT"
                       />
                     </div>
                   </div>
@@ -234,9 +242,9 @@ export default function BusinessCategories() {
                     <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                       <Image
                         className="relative"
-                        src={Logo05}
-                        width={25}
-                        height={25}
+                        src={SafifyConstructionIcon}
+                        width={48}
+                        height={48}
                         alt="Logo 05"
                       />
                     </div>
@@ -247,9 +255,9 @@ export default function BusinessCategories() {
                     <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                       <Image
                         className="relative"
-                        src={Logo06}
-                        width={20}
-                        height={18}
+                        src={SafifyHealthIcon}
+                        width={42}
+                        height={42}
                         alt="Logo 06"
                       />
                     </div>
@@ -260,9 +268,9 @@ export default function BusinessCategories() {
                     <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                       <Image
                         className="relative"
-                        src={Logo07}
-                        width={25}
-                        height={25}
+                        src={SafifyAiIcon}
+                        width={42}
+                        height={42}
                         alt="Logo 07"
                       />
                     </div>

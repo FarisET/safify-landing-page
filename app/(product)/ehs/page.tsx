@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Home - Safify",
-  description: "Incident Management",
+  title: "EHS - Safify",
+  description: "EHS - Incident Management",
 };
 
 import Hero from "@/components/hero-home";
@@ -9,7 +9,7 @@ import FeaturesPlanet from "@/components/features-planet";
 import LargeTestimonial from "@/components/large-testimonial";
 import Cta from "@/components/cta";
 
-export default function Home() {
+export default function Ehs() {
   return (
     <>
       <Hero />

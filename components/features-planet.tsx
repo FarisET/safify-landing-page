@@ -5,7 +5,6 @@ import PlanetTagImg01 from "@/public/images/planet-tag-01.png";
 import PlanetTagImg02 from "@/public/images/planet-tag-02.png";
 import PlanetTagImg03 from "@/public/images/planet-tag-03.png";
 import PlanetTagImg04 from "@/public/images/planet-tag-04.png";
-
 export default function FeaturesPlanet() {
   return (
     <section className="relative before:absolute before:inset-0 before:-z-20 before:bg-gray-900">
