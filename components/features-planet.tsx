@@ -5,6 +5,8 @@ import PlanetTagImg01 from "@/public/images/planet-tag-01.png";
 import PlanetTagImg02 from "@/public/images/planet-tag-02.png";
 import PlanetTagImg03 from "@/public/images/planet-tag-03.png";
 import PlanetTagImg04 from "@/public/images/planet-tag-04.png";
+import SafifyCycleFlow from "@/public/images/safify-cycle-flow-diagram.jpg";
+
 export default function FeaturesPlanet() {
   return (
     <section className="relative before:absolute before:inset-0 before:-z-20 before:bg-gray-900">
@@ -13,21 +15,86 @@ export default function FeaturesPlanet() {
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-16 text-center md:pb-20">
             <h2 className="text-3xl font-bold text-gray-200 md:text-4xl">
-              Simple helps your teams work more efficiently together
+              Safify helps your teams work more efficiently together
             </h2>
           </div>
           {/* Planet */}
-          <div className="pb-16 md:pb-20" data-aos="zoom-y-out">
-            <div className="text-center">
-              <div className="relative inline-flex rounded-full before:absolute before:inset-0 before:-z-10 before:scale-[.85] before:animate-[pulse_4s_cubic-bezier(.4,0,.6,1)_infinite] before:bg-gradient-to-b before:from-blue-900 before:to-sky-700/50 before:blur-3xl after:absolute after:inset-0 after:rounded-[inherit] after:[background:radial-gradient(closest-side,theme(colors.blue.500),transparent)]">
-                <Image
-                  className="rounded-full bg-gray-900"
-                  src={PlanetImg}
-                  width={400}
-                  height={400}
-                  alt="Planet"
-                />
-                <div className="pointer-events-none" aria-hidden="true">
+          <div className="pb-16 md:pb-20 flex justify-center items-center" data-aos="zoom-y-out">
+              <div className="relative">
+              <div className="relative w-96 h-96">
+                {/* Outer Circle */}
+                <div className="absolute inset-0 rounded-full border-8 border-blue-500 animate-pulse"></div>
+
+                {/* Center Text */}
+                <div className="absolute inset-0 flex justify-center items-center">
+                    <div className="text-center">
+                        <h2 className="text-4xl text-white">
+                            Safify Incident
+                        </h2>
+                        <h2 className="text-4xl text-white">
+                            Management
+                        </h2>
+                    </div>
+                </div>
+
+                {/* Items Around the Circle */}
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                    <div className="flex flex-col items-center px-4 py-2 bg-gradient-to-t from-primary to-blue-500 shadow-lg rounded-lg hover:scale-105 transition-transform">
+                        <i className="fas fa-exclamation-circle text-blue-500 text-xl mb-1"></i>
+                        <p className="text-sm font-medium text-white">
+                            Incident Occurrence <br /> and Identification
+                        </p>
+                    </div>
+                </div>
+
+                <div className="absolute top-1/4 right-0 transform translate-x-1/2 -translate-y-1/2 text-center">
+                <div className="flex flex-col items-center px-4 py-2 bg-gradient-to-t from-primary to-blue-500 shadow-lg rounded-lg hover:scale-105 transition-transform">
+                        <i className="fas fa-exclamation-circle text-blue-500 text-xl mb-1"></i>
+                        <p className="text-sm font-medium text-white">
+                            Categorize, Prioritize <br /> and Assign
+                        </p>
+                    </div>
+                </div>
+
+                <div className="absolute bottom-1/4 right-0 transform translate-x-1/2 translate-y-1/2 text-center">
+                <div className="flex flex-col items-center px-4 py-2 bg-gradient-to-t from-primary to-blue-500 shadow-lg rounded-lg hover:scale-105 transition-transform">
+                        <i className="fas fa-exclamation-circle text-blue-500 text-xl mb-1"></i>
+                        <p className="text-sm font-medium text-white">
+                            Incident Analysis <br /> and Evaluation
+                        </p>
+                    </div>
+                </div>
+
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 text-center">
+                <div className="flex flex-col items-center px-4 py-2 bg-gradient-to-t from-primary to-blue-500 shadow-lg rounded-lg hover:scale-105 transition-transform">
+                        <i className="fas fa-exclamation-circle text-blue-500 text-xl mb-1"></i>
+                        <p className="text-sm font-medium text-white">
+                            Incident Approvals <br /> and Closure
+                        </p>
+                    </div>
+                </div>
+
+                <div className="absolute bottom-1/4 left-0 transform -translate-x-1/2 translate-y-1/2 text-center">
+                <div className="flex flex-col items-center px-4 py-2 bg-gradient-to-t from-primary to-blue-500 shadow-lg rounded-lg hover:scale-105 transition-transform">
+                        <i className="fas fa-exclamation-circle text-blue-500 text-xl mb-1"></i>
+                        <p className="text-sm font-medium text-white">
+                            Learning and <br /> Future Prevention
+                        </p>
+                    </div>
+                </div>
+
+                <div className="absolute top-1/4 left-0 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                <div className="flex flex-col items-center px-4 py-2 bg-gradient-to-t from-primary to-blue-500 shadow-lg rounded-lg hover:scale-105 transition-transform">
+                        <i className="fas fa-exclamation-circle text-blue-500 text-xl mb-1"></i>
+                        <p className="text-sm font-medium text-white">
+                            Proactive Incident <br /> Detection
+                        </p>
+                    </div>
+                </div>
+
+
+
+                {/* <div className="pointer-events-none" aria-hidden="true">
                   <Image
                     className="absolute -right-64 -top-20 z-10 max-w-none"
                     src={PlanetOverlayImg}
@@ -65,7 +132,7 @@ export default function FeaturesPlanet() {
                       alt="Tag 04"
                     />
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

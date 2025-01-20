@@ -71,7 +71,7 @@ export default function HeroHome() {
               data-aos-delay={150}
             >
               Incident Management for <br className="max-lg:hidden" />
-              Learning and Efficiency
+              Continual Process Improvement
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
