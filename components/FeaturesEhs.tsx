@@ -1,0 +1,31 @@
+// components/ehs-key-features.jsx
+import { FaRegCheckCircle, FaChartLine, FaRegClock, FaShieldAlt } from 'react-icons/fa';
+
+export default function FeaturesEhs() {
+  return (
+    <section className="bg-white py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Key Features of EHS Incident Management
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {[
+            { icon: <FaRegCheckCircle className="text-blue-600" />, title: "Compliance Management", text: "Automated regulatory compliance tracking and reporting" },
+            { icon: <FaChartLine className="text-blue-600" />, title: "Real-time Analytics", text: "Interactive dashboards with key safety metrics" },
+            { icon: <FaRegClock className="text-blue-600" />, title: "Quick Resolution", text: "Automated workflows for faster incident resolution" },
+            { icon: <FaShieldAlt className="text-blue-600" />, title: "Risk Prevention", text: "Predictive analytics to identify potential risks" }
+          ].map((feature, index) => (
+            <div key={index} className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="text-4xl mb-4">{feature.icon}</div>
+              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <p className="text-gray-600">{feature.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

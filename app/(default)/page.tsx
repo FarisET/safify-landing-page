@@ -3,20 +3,21 @@ export const metadata = {
   description: "Incident Management",
 };
 
-import Hero from "@/components/hero-home";
-import BusinessCategories from "@/components/business-categories";
-import FeaturesPlanet from "@/components/features-planet";
-import LargeTestimonial from "@/components/large-testimonial";
-import Cta from "@/components/cta";
-import CircularFlow from "@/components/CircularFlowDiagram";
+
+import FeaturesEhs from "@/components/FeaturesEhs";
+import CtaEhs from "@/components/CtaEhs";
+import ProcessFlowEhs from "@/components/ProcessFlowEhs";
+import HeroEhs from "@/components/HeroEhs";
+import BenefitsEhs from "@/components/BenefitsEhs";
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <BusinessCategories />
-      <FeaturesPlanet />
-      <Cta />
+      <HeroEhs />
+      <FeaturesEhs />
+      <ProcessFlowEhs />
+      <BenefitsEhs />
+      <CtaEhs />
     </>
   );
 }

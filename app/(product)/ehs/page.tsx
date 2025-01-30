@@ -4,18 +4,18 @@ export const metadata = {
 };
 
 import Hero from "@/components/hero-home";
-import BusinessCategories from "@/components/business-categories";
-import FeaturesPlanet from "@/components/features-planet";
 import LargeTestimonial from "@/components/large-testimonial";
 import Cta from "@/components/cta";
+import HeroEhs from "@/components/HeroEhs";
+import FeaturesEhs from "@/components/FeaturesEhs";
+import ProcessFlowEhs from "@/components/ProcessFlowEhs";
 
 export default function Ehs() {
   return (
     <>
-      <Hero />
-      <BusinessCategories />
-      <FeaturesPlanet />
-      <LargeTestimonial />
+      <HeroEhs />
+      <FeaturesEhs />
+      <ProcessFlowEhs />
       <Cta />
     </>
   );
