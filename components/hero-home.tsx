@@ -6,6 +6,10 @@ import Avatar03 from "@/public/images/avatar-03.jpg";
 import Avatar04 from "@/public/images/avatar-04.jpg";
 import Avatar05 from "@/public/images/avatar-05.jpg";
 import Avatar06 from "@/public/images/avatar-06.jpg";
+import Link from "next/link";
+import SafifyITLogo from "@/public/images/safify_it_logo.png";
+import SafifyLogo from "@/public/images/safify-logo.png";
+
 
 export default function HeroHome() {
   return (
@@ -87,6 +91,50 @@ export default function HeroHome() {
                   data-aos="zoom-y-out"
                   data-aos-delay={450}
                 >
+                  {/* First Card */}
+                  <Link href="/itsm">
+                    <div className="tile group mb-4 w-64 h-40 bg-white text-gray-800 shadow hover:scale-105 sm:mb-0 sm:w-64 sm:h-40">
+                      <div className="relative flex flex-col items-center justify-center p-4">
+                        <div className="mb-2">
+                          {/* Icon for First Card */}
+                          <Image src={SafifyITLogo} alt="Safify IT Logo" width={50} height={50} />
+                        </div>
+                        <span className="text-lg font-semibold text-center">
+                          IT Service Management
+                        </span>
+                        <span className="ml-1 mt-2 tracking-normal text-primary transition-transform group-hover:translate-x-0.5">
+                          -&gt;
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+
+                  {/* Second Card */}
+                  <Link href="/ehs">
+                    <div className="tile group w-64 h-40 bg-white text-gray-800 shadow hover:bg-gray-50 hover:scale-105 sm:ml-4 sm:w-64 sm:h-40">
+                      <div className="relative flex flex-col items-center justify-center p-4">
+                        <div className="mb-2">
+                          {/* Icon for Second Card */}
+                          <Image src={SafifyLogo} alt="Safify IT Logo" width={50} height={50} />
+                        </div>
+                        <span className="text-lg font-semibold text-center">
+                          EHS Incident Management
+                        </span>
+                        <span className="ml-1 mt-2 tracking-normal text-primary transition-transform group-hover:translate-x-0.5">
+                          -&gt;
+                        </span>
+
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+              {/* <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">
+                <div
+                  className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center"
+                  data-aos="zoom-y-out"
+                  data-aos-delay={450}
+                >
                   <a
                     className="btn group mb-4 w-full bg-gradient-to-t from-primary to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
                     href="#0"
@@ -105,7 +153,7 @@ export default function HeroHome() {
                     About Us
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           {/* Hero image */}

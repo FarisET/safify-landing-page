@@ -12,21 +12,80 @@ export default function Header() {
           </div>
 
           {/* Desktop sign in links */}
-          <ul className="flex flex-1 items-center justify-end gap-3">
-            <li>
-              <Link
-                href="/itsm"
-                className="btn-sm bg-white text-gray-800 shadow hover:bg-gray-50"
-              >
-                IT Service Management
-              </Link>
+          <ul className="flex items-center gap-6">
+            {/* Products Dropdown */}
+            <li className="relative group">
+              <span className="flex items-center cursor-pointer text-gray-800 hover:text-primary">
+                Products
+                <svg
+                  className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </span>
+              <ul className="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded opacity-0 transform scale-95 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100">
+                <li>
+                  <Link href="/itsm" className="block px-4 py-2 hover:text-primary">
+                    IT Service Management
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/ehs" className="block px-4 py-2 hover:text-primary">
+                    EHS Incident Management
+                  </Link>
+                </li>
+              </ul>
             </li>
+
+            {/* Services Dropdown */}
+            {/* <li className="relative group">
+              <button className="btn-sm bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">
+                Services
+              </button>
+              <ul className="absolute hidden group-hover:block mt-2 w-48 bg-white text-gray-800 shadow-lg rounded">
+                <li>
+                  <Link
+                    href="/services/customization"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Customization
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/services/integration"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Integration
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/services/sla"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    SLA
+                  </Link>
+                </li>
+              </ul>
+            </li> */}
+
+            {/* About Us */}
             <li>
               <Link
-                href="/ehs"
-                className="btn-sm bg-gray-800 text-gray-200 shadow hover:bg-gray-900"
+                href="/about-us"
+                className="text-gray-800 px-4 py-2 rounded hover:text-primary"
               >
-                EHS Incident Management
+                About Us
               </Link>
             </li>
           </ul>
