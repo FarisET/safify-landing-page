@@ -7,21 +7,41 @@ import SafifyHeroImg from "@/public/images/Safify-hero-1.png"
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 export default function HeroEhs() {
   return (
-    <section className="relative bg-gradient-to-b from-blue-50 to-white">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 pt-24 pb-12">
-        <div className="text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            EHS Incident Management System
+    <section className="relative">
+            <PageIllustration />
+            <div className="mx-auto max-w-6xl px-4 sm:px-6">
+              {/* Hero content */}
+              <div className="pb-12 pt-32 md:pb-20 md:pt-40">
+                {/* Section header */}
+                <div className="pb-12 text-center md:pb-16">
+          <h1
+            className="mb-6 border-y text-4xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-6xl"
+            data-aos="zoom-y-out"
+            data-aos-delay={150}
+          >            EHS Incident Management System
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p
+            className="mb-8 text-lg text-gray-700"
+            data-aos="zoom-y-out"
+            data-aos-delay={300}
+          >
             Streamline environmental, health, and safety incident management with automated workflows,
             regulatory compliance tools, and real-time analytics.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div
+            data-aos="zoom-y-out"
+            data-aos-delay={450}
+
+            className="flex flex-col sm:flex-row justify-center gap-4">
+
             <Link href="mailto:ejaz@emergtechsolutions.sa.com" className="btn bg-primary text-white hover:bg-blue-700 px-8 py-3 text-lg">
               Request Demo
             </Link>
-            <div>
+            <div
+              data-aos="zoom-y-out"
+              data-aos-delay={450}
+
+            >
               <p className="text-gray-500 text-sm mt-1">
                 <span className="flex items-center gap-2">
                   <FaEnvelope /> ejaz@emergtechsolutions.sa.com
@@ -35,7 +55,11 @@ export default function HeroEhs() {
           </div>
         </div>
 
-        <div className="mt-16 rounded-xl overflow-hidden shadow-xl">
+        <div
+          data-aos="zoom-y-out"
+          data-aos-delay={500}
+
+          className="mt-16 rounded-xl overflow-hidden shadow-xl">
           <Image
             src={SafifyHeroImg}
             alt="EHS Dashboard Preview"
@@ -44,6 +68,7 @@ export default function HeroEhs() {
             height={1080}
           />
         </div>
+      </div>
       </div>
     </section>
   );

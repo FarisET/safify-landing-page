@@ -28,7 +28,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
                 </span>
 
               </p>
-          </div>
+            </div>
           </div>
 
           {/* 2nd block
@@ -79,7 +79,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
           </div> */}
           {/* 2nd block */}
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-3">
-            <h3 className="text-sm font-medium">IT Service Management</h3>
+            <a href="/itsm" className="text-sm font-medium text-gray-800 transition hover:text-gray-900">
+
+              IT Service Management</a>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -103,12 +105,14 @@ export default function Footer({ border = false }: { border?: boolean }) {
 
           {/* 3rd block */}
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-3">
-            <h3 className="text-sm font-medium">EHS Incident Management</h3>
+            <a href="/ehs" className="text-sm font-medium text-gray-800 transition hover:text-gray-900">
+              EHS Incident Management
+            </a>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="#featuresEhs"
                 >
                   Features
                 </Link>
@@ -116,9 +120,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="#processFlowEhs"
                 >
-                  Integration
+                  Workflow
                 </Link>
               </li>
               {/* <li>

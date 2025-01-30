@@ -1,22 +1,23 @@
 export const metadata = {
   title: "EHS - Safify",
-  description: "EHS - Incident Management",
+  description: "Ensure workplace safety and streamline incident management with Safify",
 };
 
-import Hero from "@/components/hero-home";
-import LargeTestimonial from "@/components/large-testimonial";
-import Cta from "@/components/cta";
-import HeroEhs from "@/components/HeroEhs";
-import FeaturesEhs from "@/components/FeaturesEhs";
-import ProcessFlowEhs from "@/components/ProcessFlowEhs";
 
-export default function Ehs() {
+import FeaturesEhs from "@/components/FeaturesEhs";
+import CtaEhs from "@/components/CtaEhs";
+import ProcessFlowEhs from "@/components/ProcessFlowEhs";
+import HeroEhs from "@/components/HeroEhs";
+import BenefitsEhs from "@/components/BenefitsEhs";
+
+export default function Home() {
   return (
     <>
       <HeroEhs />
-      <FeaturesEhs />
-      <ProcessFlowEhs />
-      <Cta />
+      <FeaturesEhs id="featuresEhs" />
+      <ProcessFlowEhs id="processFlowEhs" />
+      <BenefitsEhs />
+      <CtaEhs />
     </>
   );
 }

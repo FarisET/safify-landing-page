@@ -1,11 +1,14 @@
 // components/ehs-process-flow.jsx
 import processFlowDiagram from "@/public/images/ehs-processFlow-diagram.png";
+type ProcessFlowEhs = {
+  id?: string; // Allow `id` to be an optional prop
+};
 
 import { FaSearch, FaClipboardList, FaCheckDouble, FaChartBar } from 'react-icons/fa';
 import Image from 'next/image';
-export default function ProcessFlowEhs() {
+const ProcessFlowEhs: React.FC<ProcessFlowEhs> = ({ id }) => {
   return (
-    <section className="bg-gray-50 py-20">
+    <section id={id} className="bg-gray-50 py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -36,8 +39,12 @@ export default function ProcessFlowEhs() {
             width={800}
             height={450}
           />
+          <p className="mt-4 text-sm text-gray-500">Design Inspired by TechTarget</p>
         </div>
+
       </div>
     </section>
   );
 }
+
+export default ProcessFlowEhs;

@@ -1,9 +1,11 @@
 // components/ehs-key-features.jsx
 import { FaRegCheckCircle, FaChartLine, FaRegClock, FaShieldAlt } from 'react-icons/fa';
-
-export default function FeaturesEhs() {
+type FeaturesEhsProps = {
+  id?: string; // Allow `id` to be an optional prop
+};
+const FeaturesEhs: React.FC<FeaturesEhsProps> = ({ id }) => {
   return (
-    <section className="bg-white py-20">
+    <section id={id} className="bg-white py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -29,3 +31,5 @@ export default function FeaturesEhs() {
     </section>
   );
 }
+
+export default FeaturesEhs

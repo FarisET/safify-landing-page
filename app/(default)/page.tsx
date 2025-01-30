@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Home - Safify",
-  description: "Incident Management",
+  description: "Ensure workplace safety and streamline incident management with Safify",
 };
 
 
@@ -9,15 +9,18 @@ import CtaEhs from "@/components/CtaEhs";
 import ProcessFlowEhs from "@/components/ProcessFlowEhs";
 import HeroEhs from "@/components/HeroEhs";
 import BenefitsEhs from "@/components/BenefitsEhs";
+import FeaturesPlanet from "@/components/features-planet";
+import BusinessCategories from "@/components/business-categories";
+import Cta from "@/components/cta";
+import HeroHome from "@/components/hero-home";
 
 export default function Home() {
   return (
     <>
-      <HeroEhs />
-      <FeaturesEhs />
-      <ProcessFlowEhs />
-      <BenefitsEhs />
-      <CtaEhs />
+      <HeroHome />
+      <BusinessCategories />
+      <FeaturesPlanet />
+      <Cta/>
     </>
   );
 }
