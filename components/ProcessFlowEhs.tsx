@@ -21,7 +21,7 @@ export default function ProcessFlowEhs() {
             { icon: <FaCheckDouble />, title: "4. Resolution", text: "Automated corrective actions and verification" }
           ].map((step, index) => (
             <div key={index} className="text-center p-6">
-              <div className="flex justify-center items-center text-4xl mb-4">{step.icon}</div>
+              <div className="flex justify-center items-center text-4xl mb-4 text-primary">{step.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
               <p className="text-gray-600">{step.text}</p>
             </div>

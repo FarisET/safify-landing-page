@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./logo";
+import { FaEnvelope, FaPhone } from "react-icons/fa";
 
 export default function Footer({ border = false }: { border?: boolean }) {
   return (
@@ -17,6 +18,17 @@ export default function Footer({ border = false }: { border?: boolean }) {
             <div className="text-sm text-gray-600">
               &copy; safify.ai - All rights reserved.
             </div>
+            <div>
+              <p className="text-gray-500 text-sm mt-1">
+                <span className="flex items-center gap-2">
+                  <FaEnvelope /> ejaz@emergtechsolutions.sa.com
+                </span>
+                <span className="flex items-center gap-2">
+                  <FaPhone /> +966 56 176 3380
+                </span>
+
+              </p>
+          </div>
           </div>
 
           {/* 2nd block
@@ -174,7 +186,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="flex items-center justify-center text-primary transition hover:text-blue-600"
-                  href="#0"
+                  href="https://www.linkedin.com/company/safifyed/posts/"
                   aria-label="Linkedin"
                 >
                   <svg
@@ -189,7 +201,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="flex items-center justify-center text-primary transition hover:text-blue-600"
-                  href="#0"
+                  href="mailto:ejaz@emergtechsolutions.sa.com"
                   aria-label="Email"
                 >
                   <svg
@@ -203,7 +215,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
               </li>
               <li>
                 <Link
-                  className="flex items-center justify-center text-primary transition hover:text-blue-600"
+                  className="flex items-center justify-center text-gray-300 transition hover:text-blue-600"
                   href="#0"
                   aria-label="Youtube"
                 >

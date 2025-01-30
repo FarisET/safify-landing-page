@@ -13,10 +13,10 @@ export default function FeaturesEhs() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { icon: <FaRegCheckCircle className="text-blue-600" />, title: "Compliance Management", text: "Automated regulatory compliance tracking and reporting" },
-            { icon: <FaChartLine className="text-blue-600" />, title: "Real-time Analytics", text: "Interactive dashboards with key safety metrics" },
-            { icon: <FaRegClock className="text-blue-600" />, title: "Quick Resolution", text: "Automated workflows for faster incident resolution" },
-            { icon: <FaShieldAlt className="text-blue-600" />, title: "Risk Prevention", text: "Predictive analytics to identify potential risks" }
+            { icon: <FaRegCheckCircle className="text-primary" />, title: "Compliance Management", text: "Automated regulatory compliance tracking and reporting" },
+            { icon: <FaChartLine className="text-primary" />, title: "Real-time Analytics", text: "Interactive dashboards with key safety metrics" },
+            { icon: <FaRegClock className="text-primary" />, title: "Quick Resolution", text: "Automated workflows for faster incident resolution" },
+            { icon: <FaShieldAlt className="text-primary" />, title: "Risk Prevention", text: "Predictive analytics to identify potential risks" }
           ].map((feature, index) => (
             <div key={index} className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-4xl mb-4">{feature.icon}</div>
