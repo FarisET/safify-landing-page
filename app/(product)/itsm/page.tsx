@@ -1,22 +1,28 @@
 export const metadata = {
   title: "ITSM - Safify",
-  description: "IT - Service Management",
+  description: "Ensure workplace safety and streamline incident management with Safify",
 };
 
-import Hero from "@/components/hero-home";
-import BusinessCategories from "@/components/business-categories";
-import FeaturesPlanet from "@/components/features-planet";
-import LargeTestimonial from "@/components/large-testimonial";
-import Cta from "@/components/cta";
 
-export default function Itsm() {
+import FeaturesEhs from "@/components/FeaturesEhs";
+import CtaEhs from "@/components/CtaEhs";
+import ProcessFlowEhs from "@/components/ProcessFlowEhs";
+import HeroEhs from "@/components/HeroEhs";
+import BenefitsEhs from "@/components/BenefitsEhs";
+import UseCasesEhs from "@/components/UseCasesEhs";
+import HeroItsm from "@/components/itsm/HeroItsm";
+import InterfaceItsm from "@/components/itsm/InterfaceItsm";
+import FeaturesItsm from "@/components/itsm/FeaturesItsm";
+
+export default function Home() {
   return (
     <>
-      <Hero />
-      <BusinessCategories />
-      <FeaturesPlanet />
-      <LargeTestimonial />
-      <Cta />
+      <HeroItsm />
+      <InterfaceItsm/>
+      <FeaturesItsm id="featuresItsm"/>
+      {/* <ProcessFlowEhs id="processFlowEhs" />
+      <BenefitsEhs /> */}
+      <CtaEhs />
     </>
   );
 }

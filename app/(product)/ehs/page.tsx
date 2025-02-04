@@ -9,6 +9,7 @@ import CtaEhs from "@/components/CtaEhs";
 import ProcessFlowEhs from "@/components/ProcessFlowEhs";
 import HeroEhs from "@/components/HeroEhs";
 import BenefitsEhs from "@/components/BenefitsEhs";
+import UseCasesEhs from "@/components/UseCasesEhs";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <FeaturesEhs id="featuresEhs" />
       <ProcessFlowEhs id="processFlowEhs" />
       <BenefitsEhs />
+      <UseCasesEhs />
       <CtaEhs />
     </>
   );
