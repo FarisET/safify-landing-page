@@ -8,7 +8,7 @@ const FeaturesEhs: React.FC<FeaturesEhsProps> = ({ id }) => {
     <section id={id} className="bg-white py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
             Key Features of EHS Incident Management
           </h2>
         </div>
@@ -21,8 +21,8 @@ const FeaturesEhs: React.FC<FeaturesEhsProps> = ({ id }) => {
             { icon: <FaShieldAlt className="text-primary" />, title: "Risk Prevention", text: "Predictive analytics to identify potential risks" }
           ].map((feature, index) => (
             <div key={index} className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-4xl mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <div className="text-2xl md:text-4xl mb-4">{feature.icon}</div>
+              <h3 className="text-lg md:text-xl font-semibold mb-2">{feature.title}</h3>
               <p className="text-gray-600">{feature.text}</p>
             </div>
           ))}

@@ -11,7 +11,7 @@ const ProcessFlowEhs: React.FC<ProcessFlowEhs> = ({ id }) => {
     <section id={id} className="bg-gray-50 py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
             Incident Management Workflow
           </h2>
         </div>
@@ -24,8 +24,8 @@ const ProcessFlowEhs: React.FC<ProcessFlowEhs> = ({ id }) => {
             { icon: <FaCheckDouble />, title: "4. Resolution", text: "Automated corrective actions and verification" }
           ].map((step, index) => (
             <div key={index} className="text-center p-6">
-              <div className="flex justify-center items-center text-4xl mb-4 text-primary">{step.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+              <div className="flex justify-center items-center text-2xl md:text-4xl mb-4 text-primary">{step.icon}</div>
+              <h3 className="text-lg md:text-xl font-semibold mb-2">{step.title}</h3>
               <p className="text-gray-600">{step.text}</p>
             </div>
           ))}
