@@ -64,8 +64,8 @@ export default function InterfaceItsm() {
                             )}
                         </div>
                         <div className="w-full md:w-1/2 text-center md:text-left">
-                            <h2 className="text-3xl font-bold mb-4">{section.title}</h2>
-                            <p className="text-lg text-gray-700">{section.description}</p>
+                            <h2 className="text-xl md:text-3xl font-bold mb-4">{section.title}</h2>
+                            <p className="text-md md:text-lg text-gray-700">{section.description}</p>
                         </div>
                     </div>
                 ))}

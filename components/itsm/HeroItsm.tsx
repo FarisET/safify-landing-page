@@ -14,13 +14,13 @@ export default function HeroItsm() {
                 {/* Section header */}
                 <div className="pb-12 text-center md:pb-16">
           <h1
-            className="mb-6 border-y text-4xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-6xl"
+            className="mb-6 border-y text-3xl md:text-4xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-6xl"
             data-aos="zoom-y-out"
             data-aos-delay={150}
           >            IT Service System
           </h1>
           <p
-            className="mb-8 text-lg text-gray-700"
+            className="mb-8 text-md md:text-lg text-gray-700"
             data-aos="zoom-y-out"
             data-aos-delay={300}
           >
@@ -31,7 +31,7 @@ export default function HeroItsm() {
             data-aos="zoom-y-out"
             data-aos-delay={450}
 
-            className="flex flex-col sm:flex-row justify-center gap-4">
+            className="flex flex-col px-6 sm:flex-row justify-center gap-4">
 
             <Link href="mailto:ejaz@emergtechsolutions.sa.com" className="btn bg-primary text-white hover:bg-blue-700 px-8 py-3 text-lg">
               Request Demo
