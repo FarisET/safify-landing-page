@@ -1,7 +1,16 @@
-import Link from "next/link";
 import Logo from "./logo";
+import { useState, useRef, useEffect } from "react";
+import Link from "next/link";
 
 export default function Header() {
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
+
+  const toggleProductsMenu = () => {
+    setIsProductsOpen(!isProductsOpen);
+  };
+
+  
+
   return (
     <header className="fixed top-2 z-30 w-full md:top-6">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -15,10 +24,14 @@ export default function Header() {
           <ul className="flex items-center gap-6">
             {/* Products Dropdown */}
             <li className="relative group">
-              <span className="flex items-center cursor-pointer text-gray-800 hover:text-primary">
+              <span
+                className="flex items-center cursor-pointer text-gray-800 hover:text-primary"
+                onClick={toggleProductsMenu}
+              >
                 Products
                 <svg
-                  className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180"
+                  className={`w-4 h-4 ml-1 transition-transform duration-300 ${isProductsOpen ? "rotate-180" : ""
+                    }`}
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -32,19 +45,29 @@ export default function Header() {
                   />
                 </svg>
               </span>
-              <ul className="absolute left-0 mt-2 min-w-[200px] max-w-xs sm:max-w-sm md:max-w-md bg-white text-gray-800 shadow-lg rounded opacity-0 transform scale-95 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100">
+              <ul
+                className={`absolute left-0 mt-2 min-w-[200px] max-w-xs sm:max-w-sm md:max-w-md bg-white text-gray-800 shadow-lg rounded transition-all duration-300 ${isProductsOpen
+                    ? "opacity-100 scale-100"
+                    : "opacity-0 scale-95 pointer-events-none"
+                  }`}
+              >
                 <li>
-                  <Link href="/itsm" className="block px-4 py-2 hover:text-primary whitespace-nowrap">
+                  <Link
+                    href="/itsm"
+                    className="block px-4 py-2 hover:text-primary whitespace-nowrap"
+                  >
                     IT Service Management
                   </Link>
                 </li>
                 <li>
-                  <Link href="/ehs" className="block px-4 py-2 hover:text-primary whitespace-nowrap">
+                  <Link
+                    href="/ehs"
+                    className="block px-4 py-2 hover:text-primary whitespace-nowrap"
+                  >
                     EHS Incident Management
                   </Link>
                 </li>
               </ul>
-
             </li>
 
             {/* Services Dropdown */}
@@ -83,7 +106,7 @@ export default function Header() {
             {/* About Us */}
             <li>
               <Link
-                href="/about-us"
+                href="/services"
                 className="text-gray-800 px-4 py-2 rounded hover:text-primary"
               >
                 Services
