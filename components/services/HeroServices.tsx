@@ -1,7 +1,4 @@
-import Image from "next/image";
 import PageIllustration from "@/components/page-illustration";
-import Link from "next/link";
-import TicketHeroImg from "@/public/images/SAFIFY ITSM Home Page-compressed-2.png";
 
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 export default function HeroServices() {

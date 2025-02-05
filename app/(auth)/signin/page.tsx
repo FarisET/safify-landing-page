@@ -55,12 +55,12 @@ export default function SignIn() {
         </form>
         {/* Bottom link */}
         <div className="mt-6 text-center">
-          <Link
+          <a
             className="text-sm text-gray-700 underline hover:no-underline"
             href="/reset-password"
           >
             Forgot password
-          </Link>
+          </a>
         </div>
       </>
     </>

@@ -35,8 +35,7 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Our products ensure an ecosystem that offers continuous learning and ever-increasing efficiency. Our
-                products come packed with integrated AI Powered knowledge bases and detailed dashboards to help resolve issues quicker and potentially prevent incidents by learning from past data.              </p>
+                Our products create a seamless ecosystem that fosters continuous learning and maximizes efficiency. Equipped with AI-powered knowledge bases and advanced dashboards, they accelerate issue resolution and proactively prevent incidents by leveraging insights from past data.                  </p>
               <div
                 className="mx-auto flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
                 data-aos="zoom-y-out"
@@ -50,7 +49,7 @@ export default function HeroHome() {
                         <Image src={SafifyITLogo} alt="Safify IT Logo" width={50} height={50} />
                       </div>
                       <span className="text-lg font-semibold text-center">
-                      &#8203; &#8203; &#8203; IT Service Management &#8203; &#8203; &#8203;
+                        &#8203; &#8203; &#8203; IT Service Management &#8203; &#8203; &#8203;
                       </span>
                       <span className="ml-1 mt-2 tracking-normal text-primary transition-transform group-hover:translate-x-0.5">
                         -&gt;

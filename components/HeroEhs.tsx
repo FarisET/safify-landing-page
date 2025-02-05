@@ -34,9 +34,9 @@ export default function HeroEhs() {
 
               className="flex flex-col px-6 sm:flex-row justify-center gap-4">
 
-              <Link href="mailto:ejaz@emergtechsolutions.sa.com" className="btn bg-primary text-white hover:bg-blue-700 px-8 py-3 text-lg">
+              <a href="mailto:ejaz@emergtechsolutions.sa.com" className="btn bg-primary text-white hover:bg-blue-700 px-8 py-3 text-lg">
                 Request Demo
-              </Link>
+              </a>
               <div
                 data-aos="zoom-y-out"
                 data-aos-delay={450}

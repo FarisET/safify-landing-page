@@ -70,38 +70,6 @@ export default function Header() {
               </ul>
             </li>
 
-            {/* Services Dropdown */}
-            {/* <li className="relative group">
-              <button className="btn-sm bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">
-                Services
-              </button>
-              <ul className="absolute hidden group-hover:block mt-2 w-48 bg-white text-gray-800 shadow-lg rounded">
-                <li>
-                  <Link
-                    href="/services/customization"
-                    className="block px-4 py-2 hover:bg-gray-100"
-                  >
-                    Customization
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services/integration"
-                    className="block px-4 py-2 hover:bg-gray-100"
-                  >
-                    Integration
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services/sla"
-                    className="block px-4 py-2 hover:bg-gray-100"
-                  >
-                    SLA
-                  </Link>
-                </li>
-              </ul>
-            </li> */}
 
             {/* About Us */}
             <li>

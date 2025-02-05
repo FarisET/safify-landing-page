@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 import PageIllustration from "@/components/page-illustration";
-import Link from "next/link";
 import TicketHeroImg from "@/public/images/SAFIFY ITSM Home Page-compressed-2.png";
 import NetworkScan from "@/public/images/Network Scan.jpg"; // Replace with actual image paths
 import ActionForm from "@/public/images/Action Form.jpg";
@@ -29,7 +28,7 @@ export default function InterfaceItsm() {
     ];
 
     return (
-        <section className="mx-auto flex items-center justify-center relative">
+        <section id="InterfacesItsm" className="mx-auto flex items-center justify-center relative">
             <div className="mx-auto px-4 sm:px-6">
                 {sections.map((section, index) => (
                     <div
