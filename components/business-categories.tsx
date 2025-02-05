@@ -22,7 +22,7 @@ export default function BusinessCategories() {
     <section>
       <div className="mx-auto max-w-4xl px-4 sm:px-6">
         <div className="pb-12 md:pb-20">
-
+          {/* Tab panels */}
           <div className="relative flex h-[324px] items-center justify-center">
             {/* Small blue dots */}
             <div className="absolute -z-10">
