@@ -13,14 +13,21 @@ import FeaturesPlanet from "@/components/features-planet";
 import BusinessCategories from "@/components/business-categories";
 import Cta from "@/components/cta";
 import HeroHome from "@/components/hero-home";
+import BusinessCategoriesMobile from "@/components/business-categories-mobile";
 
 export default function Home() {
   return (
     <>
       <HeroHome />
-      <BusinessCategories />
+      <div className="hidden sm:block">
+        <BusinessCategories />
+      </div>
+      <div className="sm:hidden">
+        <BusinessCategoriesMobile />
+      </div>
       <FeaturesPlanet />
-      <Cta/>
+      <Cta />
     </>
+
   );
 }

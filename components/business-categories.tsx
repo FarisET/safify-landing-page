@@ -20,7 +20,7 @@ import SafifySafetyIcon from '@/public/images/safety icon.svg'
 export default function BusinessCategories() {
   return (
     <section>
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6">
         <div className="pb-12 md:pb-20">
           {/* Tab panels */}
           <div className="relative flex h-[324px] items-center justify-center">
@@ -263,6 +263,7 @@ export default function BusinessCategories() {
                     </div>
                   </div>
                 </div>
+
                 <div className="absolute -translate-x-[216px] translate-y-[82px]">
                   <div className="animate-[breath_6s_ease-in-out_2.5s_infinite_both]">
                     <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
@@ -276,37 +277,25 @@ export default function BusinessCategories() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute -translate-x-[292px] opacity-40">
-                  <div className="animate-[breath_6s_ease-in-out_2s_infinite_both]">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
-                      <Image
-                        className="relative"
-                        src={Logo08}
-                        width={20}
-                        height={20}
-                        alt="Logo 08"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute translate-x-[292px] opacity-40">
-                  <div className="animate-[breath_6s_ease-in-out_4s_infinite_both]">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
-                      <Image
-                        className="relative"
-                        src={Logo09}
-                        width={21}
-                        height={13}
-                        alt="Logo 09"
-                      />
-                    </div>
-                  </div>
-                </div>
+                
               </article>
+              
             </div>
           </div>
+          
         </div>
+
       </div>
+      {/* Floating Texts */}
+      <div className="hidden md:absolute inset-0 overflow-hidden">
+        <div className="absolute bottom-20 left-1/3 animate-float text-lg font-bold text-gray-300">Safify IT</div>
+        <div className="absolute bottom-10 right-1/3 animate-float text-lg font-bold text-gray-300">Safify EHS</div>
+      </div>
+      {/* <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -bottom-0 left-1/3 animate-float text-lg font-bold text-blue-500">Safify Construction</div>
+        <div className="absolute bottom-0 right-1/3 animate-float text-lg font-bold text-blue-500">Safify Health</div>
+      </div> */}
+      
     </section>
   );
 }
