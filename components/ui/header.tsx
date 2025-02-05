@@ -86,7 +86,7 @@ export default function Header() {
                 href="/about-us"
                 className="text-gray-800 px-4 py-2 rounded hover:text-primary"
               >
-                About Us
+                Services
               </Link>
             </li>
           </ul>

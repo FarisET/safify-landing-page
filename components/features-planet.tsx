@@ -48,7 +48,7 @@ export default function FeaturesPlanet() {
     </div>
 </div>
 
-<div className="absolute top-1/4 right-4 md:right-0 transform translate-x-1/2 -translate-y-1/2 text-center">
+<div className="absolute top-1/4 right-6 md:right-0 transform translate-x-1/2 -translate-y-1/2 text-center">
     <div className="flex flex-col items-center px-2 py-1 sm:px-4 sm:py-2 bg-gradient-to-t from-primary to-blue-500 shadow-lg rounded-lg hover:scale-105 transition-transform">
         <i className="fas fa-exclamation-circle text-blue-500 text-lg sm:text-md mb-1"></i>
         <p className="text-xs sm:text-sm font-medium text-white">
@@ -57,7 +57,7 @@ export default function FeaturesPlanet() {
     </div>
 </div>
 
-<div className="absolute bottom-1/4 right-4 md:right-0 transform translate-x-1/2 translate-y-1/2 text-center">
+<div className="absolute bottom-1/4 right-6 md:right-0 transform translate-x-1/2 translate-y-1/2 text-center">
     <div className="flex flex-col items-center px-2 py-1 sm:px-4 sm:py-2 bg-gradient-to-t from-primary to-blue-500 shadow-lg rounded-lg hover:scale-105 transition-transform">
         <i className="fas fa-exclamation-circle text-blue-500 text-lg sm:text-md mb-1"></i>
         <p className="text-xs sm:text-sm font-medium text-white">
@@ -75,7 +75,7 @@ export default function FeaturesPlanet() {
     </div>
 </div>
 
-<div className="absolute bottom-1/4 left-4 md:left-0 transform -translate-x-1/2 translate-y-1/2 text-center">
+<div className="absolute bottom-1/4 left-6 md:left-0 transform -translate-x-1/2 translate-y-1/2 text-center">
     <div className="flex flex-col items-center px-2 py-1 sm:px-4 sm:py-2 bg-gradient-to-t from-primary to-blue-500 shadow-lg rounded-lg hover:scale-105 transition-transform">
         <i className="fas fa-exclamation-circle text-blue-500 text-lg sm:text-md mb-1"></i>
         <p className="text-xs sm:text-sm font-medium text-white">
@@ -84,7 +84,7 @@ export default function FeaturesPlanet() {
     </div>
 </div>
 
-<div className="absolute top-1/4 left-4 md:left-0 transform -translate-x-1/2 -translate-y-1/2 text-center">
+<div className="absolute top-1/4 left-6 md:left-0 transform -translate-x-1/2 -translate-y-1/2 text-center">
     <div className="flex flex-col items-center px-2 py-1 sm:px-4 sm:py-2 bg-gradient-to-t from-primary to-blue-500 shadow-lg rounded-lg hover:scale-105 transition-transform">
         <i className="fas fa-exclamation-circle text-blue-500 text-lg sm:text-md mb-1"></i>
         <p className="text-xs sm:text-sm font-medium text-white">

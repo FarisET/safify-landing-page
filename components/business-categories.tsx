@@ -198,32 +198,7 @@ export default function BusinessCategories() {
 
             <div className="relative flex flex-col">
               <article className="flex h-full w-full items-center justify-center focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300">
-                <div className="absolute -translate-x-[136px]">
-                  <div className="animate-[breath_7s_ease-in-out_3s_infinite_both]">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <Image
-                        className="relative"
-                        src={SafifySafetyIcon}
-                        width={23}
-                        height={22}
-                        alt="Logo 02"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute translate-x-[136px]">
-                  <div className="animate-[breath_7s_ease-in-out_3.5s_infinite_both]">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <Image
-                        className="relative"
-                        src={SafifySafetyIcon}
-                        width={32}
-                        height={32}
-                        alt="Logo 03"
-                      />
-                    </div>
-                  </div>
-                </div>
+                
                 <div className="absolute -translate-x-[216px] -translate-y-[82px]">
                   <div className="animate-[breath_6s_ease-in-out_3.5s_infinite_both]">
                     <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">

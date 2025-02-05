@@ -19,13 +19,14 @@ export default function Home() {
   return (
     <>
       <HeroHome />
-      <div className="hidden sm:block">
+      <FeaturesPlanet />
+
+      <div className="hidden sm:block">      
         <BusinessCategories />
       </div>
       <div className="sm:hidden">
         <BusinessCategoriesMobile />
       </div>
-      <FeaturesPlanet />
       <Cta />
     </>
 
