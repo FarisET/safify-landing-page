@@ -32,18 +32,19 @@ export default function Header() {
                   />
                 </svg>
               </span>
-              <ul className="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-lg rounded opacity-0 transform scale-95 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100">
+              <ul className="absolute left-0 mt-2 min-w-[200px] max-w-xs sm:max-w-sm md:max-w-md bg-white text-gray-800 shadow-lg rounded opacity-0 transform scale-95 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100">
                 <li>
-                  <Link href="/itsm" className="block px-4 py-2 hover:text-primary">
+                  <Link href="/itsm" className="block px-4 py-2 hover:text-primary whitespace-nowrap">
                     IT Service Management
                   </Link>
                 </li>
                 <li>
-                  <Link href="/ehs" className="block px-4 py-2 hover:text-primary">
+                  <Link href="/ehs" className="block px-4 py-2 hover:text-primary whitespace-nowrap">
                     EHS Incident Management
                   </Link>
                 </li>
               </ul>
+
             </li>
 
             {/* Services Dropdown */}

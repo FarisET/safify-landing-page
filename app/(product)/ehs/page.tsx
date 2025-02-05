@@ -18,7 +18,6 @@ export default function Home() {
       <FeaturesEhs id="featuresEhs" />
       <ProcessFlowEhs id="processFlowEhs" />
       <BenefitsEhs />
-      <UseCasesEhs />
       <CtaEhs />
     </>
   );

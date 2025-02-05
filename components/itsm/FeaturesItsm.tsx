@@ -284,23 +284,7 @@ const FeaturesItsm: React.FC<FeaturesItsmProps> = ({ id }) => {
         </ul>
       ),
     },
-    {
-      icon: <FaLock className="text-blue-500 text-xl" />,
-      title: "Security Measures",
-      text: (
-        <ul className="p-4 font-semibold text-left space-y-2">
-          <li className="relative before:content-['➜'] before:absolute before:-left-4 before:text-blue-500">
-            Role-based access control. Least privilege access.
-          </li>
-          <li className="relative before:content-['➜'] before:absolute before:-left-4 before:text-blue-500">
-            Token-based authentication and authorization
-          </li>
-          <li className="relative before:content-['➜'] before:absolute before:-left-4 before:text-blue-500">
-            Flexible data residency options
-          </li>
-        </ul>
-      ),
-    },];
+ ];
 
   return (
     <section id={id} className="bg-white py-20">

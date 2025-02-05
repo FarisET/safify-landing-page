@@ -217,7 +217,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   </svg>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   className="flex items-center justify-center text-gray-300 transition hover:text-blue-600"
                   href="#0"
@@ -231,7 +231,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
                     <path d="M23.498 6.186a2.999 2.999 0 0 0-2.112-2.116c-1.868-.502-9.386-.502-9.386-.502s-7.519 0-9.386.502a3.002 3.002 0 0 0-2.112 2.116c-.507 1.867-.507 5.781-.507 5.781s0 3.915.507 5.782a2.999 2.999 0 0 0 2.112 2.115c1.868.502 9.386.502 9.386.502s7.519 0 9.386-.502a2.999 2.999 0 0 0 2.112-2.115c.507-1.867.507-5.782.507-5.782s0-3.914-.507-5.781zm-14.498 8.064v-6.5l6.5 3.25-6.5 3.25z" />
                   </svg>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
