@@ -24,6 +24,10 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   <FaEnvelope /> ejaz@emergtechsolutions.sa.com
                 </span>
                 <span className="flex items-center gap-2">
+                  <FaEnvelope /> faris@emergtechsolutions.com
+                </span>
+
+                <span className="flex items-center gap-2">
                   <FaPhone /> +966 56 176 3380
                 </span>
 
@@ -103,7 +107,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
                 </a>
               </li>
               <li className="pointer-events-auto">
-                <a href="mailto:ejaz@emergtechsolutions.sa.com" className="inline-flex items-center justify-center text-primary transition hover:text-blue-600 cursor-pointer">
+                <a href="mailto:ejaz@emergtechsolutions.sa.com;faris@emergtechsolutions.com" className="inline-flex items-center justify-center text-primary transition hover:text-blue-600 cursor-pointer">
                   <FaEnvelope className="text-primary text-2xl hover:text-blue-600 cursor-pointer" />
                 </a>
               </li>

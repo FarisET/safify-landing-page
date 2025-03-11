@@ -21,9 +21,9 @@ export default function Home() {
       <HeroHome />
       <FeaturesPlanet />
 
-      <div className="hidden sm:block">      
+      {/* <div className="hidden sm:block">      
         <BusinessCategories />
-      </div>
+      </div> */}
       <div className="sm:hidden">
         <BusinessCategoriesMobile />
       </div>

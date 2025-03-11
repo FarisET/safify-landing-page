@@ -47,6 +47,10 @@ export default function HeroItsm() {
                     <FaEnvelope /> ejaz@emergtechsolutions.sa.com
                   </span>
                   <span className="flex items-center gap-2">
+                    <FaEnvelope /> faris@emergtechsolutions.com
+                  </span>
+
+                  <span className="flex items-center gap-2">
                     <FaPhone /> +966 56 176 3380
                   </span>
 
