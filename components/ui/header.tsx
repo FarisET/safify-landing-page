@@ -67,6 +67,16 @@ export default function Header() {
                     EHS Incident Management
                   </Link>
                 </li>
+
+                <li>
+                  <Link
+                    href="/form-builder"
+                    className="block px-4 py-2 hover:text-primary whitespace-nowrap"
+                  >
+                    EHS Form Builder
+                  </Link>
+                </li>
+
               </ul>
             </li>
 

@@ -1,4 +1,4 @@
-import { FaLaptopCode, FaBuilding, FaBriefcaseMedical, FaRobot } from "react-icons/fa";
+import { FaLaptopCode, FaBuilding, FaBriefcaseMedical, FaRobot, FaBusinessTime } from "react-icons/fa";
 
 const BusinessCategoriesMobile = () => {
   return (
@@ -18,7 +18,7 @@ const BusinessCategoriesMobile = () => {
           <p className="text-gray-800 font-semibold text-sm mt-2">Safify Health</p>
         </div>
         <div className="flex flex-col items-center">
-          <FaRobot className="text-primary text-3xl" />
+          <FaBusinessTime className="text-primary text-3xl" />
           <p className="text-gray-800 font-semibold text-sm mt-2">Safify Corporate</p>
         </div>
       </div>

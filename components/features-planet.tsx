@@ -6,7 +6,7 @@ import PlanetTagImg02 from "@/public/images/planet-tag-02.png";
 import PlanetTagImg03 from "@/public/images/planet-tag-03.png";
 import PlanetTagImg04 from "@/public/images/planet-tag-04.png";
 import SafifyCycleFlow from "@/public/images/safify-cycle-flow-diagram.jpg";
-import { FaArrowUp, FaBiohazard, FaBook, FaChartBar, FaChevronDown, FaChevronUp, FaLaptop, FaPen, FaSign, FaSignature, FaUserInjured } from 'react-icons/fa';
+import { FaArrowUp, FaBiohazard, FaBook, FaChartBar, FaChevronDown, FaChevronUp, FaGlobeAsia, FaLaptop, FaNetworkWired, FaPen, FaSign, FaSignature, FaUserInjured } from 'react-icons/fa';
 
 export default function FeaturesPlanet() {
   return (
@@ -104,31 +104,26 @@ export default function FeaturesPlanet() {
                 <span>Incident Management</span>
               </h3>
               <p className="text-[15px] text-gray-400">
-                Tracks and resolves IT incidents to minimize downtime. Ticket creation, prioritization,
-                escalation, & investigations.
+              Report, track, and manage incidents of any nature — IT, safety, operations, or customer service—to ensure quick resolution and reduce impact.
 
               </p>
             </article>
             <article>
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
-                <FaBiohazard className="text-primary" />
-                <span>Problem Management</span>
+                <FaNetworkWired className="text-primary" />
+                <span>Operations Management</span>
               </h3>
               <p className="text-[15px] text-gray-400">
-                Identifies root causes of recurring incidents to prevent future occurrences.
-                Root Cause Analysis (RCA), Investigation forms, & problem-resolution mapping
-
+              Reporting to ensure continuity and compliance across IT and safety operations with integrated workflows and approvals.
               </p>
             </article>
             <article>
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
                 <FaBook className="text-primary" />
-                <span>Knowledge Management</span>
+                <span>Complaince Management</span>
               </h3>
               <p className="text-[15px] text-gray-400">
-                Provides a centralized repository of solutions and best practices. Close incidents quicker
-                with quick resolutions.
-              </p>
+              Digitize audits, inspections, and checklists for consistent compliance and quality. Enable offline access to empower frontline teams in low-connectivity environments.              </p>
             </article>
             <article>
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">

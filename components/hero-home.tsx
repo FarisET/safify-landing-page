@@ -95,7 +95,7 @@ export default function HeroHome() {
                       Safify FormBuilder
                     </span>
                     <p className="text-sm text-gray-600 mt-1">
-                      Build forms, share with your team, and submit from anywhere.
+                    Create audits, inspections, and checklists. Share with your team and access offline.
                     </p>
                     <span className="mt-2 tracking-normal text-primary transition-transform group-hover:translate-x-0.5">
                       -&gt;

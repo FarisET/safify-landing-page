@@ -19,7 +19,7 @@ export default function OurServices() {
             </div>
             <h3 className="text-xl font-semibold mb-4">Flexible Plans</h3>
             <p className="text-gray-600">
-              License-based custom pricing tailored to your company's scale. Get a quote that fits your needs.
+              We offer Perpetual and Subscription licenses. Get a quote that fits your needs.
             </p>
           </div>
 
@@ -34,7 +34,7 @@ export default function OurServices() {
             </div>
             <h3 className="text-xl font-semibold mb-4">Customizations</h3>
             <p className="text-gray-600">
-              Add on-demand features, custom email alerts, personalized messages, and approval workflows to fit your unique processes.
+              We cater feature requests, custom email alerts, and custom development of approval workflows to adhere to your company SOPs.
             </p>
           </div>
 
@@ -49,7 +49,7 @@ export default function OurServices() {
             </div>
             <h3 className="text-xl font-semibold mb-4">Integrations</h3>
             <p className="text-gray-600">
-              Seamlessly connect with external systems like ERPs or user directories using APIs for enhanced functionality.
+              We support connectivity with external systems like ERPs, user directories and reporting tools. 
             </p>
           </div>
 
@@ -64,7 +64,7 @@ export default function OurServices() {
             </div>
             <h3 className="text-xl font-semibold mb-4">Support & Training</h3>
             <p className="text-gray-600">
-              Dedicated support and comprehensive training to ensure your team is fully equipped to use our software effectively.
+              We offer dedicated support and seamless onboarding to ensure your team is fully equipped to use our software effectively.
             </p>
           </div>
 
@@ -79,7 +79,7 @@ export default function OurServices() {
             </div>
             <h3 className="text-xl font-semibold mb-4">Security & Compliance</h3>
             <p className="text-gray-600">
-              Ensure your data is secure and compliant with industry standards. We prioritize your safety and privacy.
+              We ensure your data remains secure and private as per industry standards. We prioritize your safety and privacy.
             </p>
           </div>
 
@@ -94,7 +94,7 @@ export default function OurServices() {
             </div>
             <h3 className="text-xl font-semibold mb-4">Mobile Optimization</h3>
             <p className="text-gray-600">
-              Access our software on the go with mobile-optimized solutions designed for convenience and efficiency.
+              You can access our software on the go. Our solutions are mobile-optimized designed for convenience and efficiency.
             </p>
           </div>
         </div>

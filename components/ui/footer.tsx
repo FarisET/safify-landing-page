@@ -16,7 +16,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <Logo />
             </div>
             <div className="text-sm text-gray-600">
-              &copy; safify.ai - All rights reserved.
+              &copy; safify - All rights reserved.
             </div>
             <div>
               <p className="text-gray-500 text-sm mt-1">
@@ -31,15 +31,21 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   <FaPhone /> +966 56 176 3380
                 </span>
 
+                <span className="flex items-center gap-2">
+                  <FaPhone /> +92 325 286 5872
+                </span>
+
+
+
               </p>
             </div>
           </div>
 
           {/* 2nd block */}
-          <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-3">
+          <div className="space-y-2 sm:col-span-6 md:col-span-2 lg:col-span-2">
             <a href="/itsm" className="text-sm font-medium text-gray-800 transition hover:text-gray-900">
 
-              IT Service Management</a>
+              Safify ITSM</a>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
@@ -62,9 +68,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
 
 
           {/* 3rd block */}
-          <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-3">
+          <div className="space-y-2 sm:col-span-6 md:col-span-2 lg:col-span-2">
             <a href="/ehs" className="text-sm font-medium text-gray-800 transition hover:text-gray-900">
-              EHS Incident Management
+              Safify EHS
             </a>
             <ul className="space-y-2 text-sm">
               <li>
@@ -79,6 +85,31 @@ export default function Footer({ border = false }: { border?: boolean }) {
                 <a
                   className="text-gray-600 transition hover:text-gray-900"
                   href="ehs/#processFlowEhs"
+                >
+                  Workflow
+                </a>
+              </li>
+            </ul>
+          </div>
+
+           {/* 4th block */}
+           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
+            <a href="/form-builder" className="text-sm font-medium text-gray-800 transition hover:text-gray-900">
+              Safify FormBuilder
+            </a>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a
+                  className="text-gray-600 transition hover:text-gray-900"
+                  href="form-builder"
+                >
+                  Features
+                </a>
+              </li>
+              <li>
+                <a
+                  className="text-gray-600 transition hover:text-gray-900"
+                  href="form-builder"
                 >
                   Workflow
                 </a>

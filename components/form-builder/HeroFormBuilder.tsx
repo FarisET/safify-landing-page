@@ -8,11 +8,8 @@ import PageIllustration from "@/components/page-illustration";
 import Link from "next/link";
 
 const HeroFormBuilder = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-  return <section id="home" className="pt-24 md:pt-32 pb-16 md:pb-24 px-4 md:px-0 overflow-hidden">
+
+  return <section id="homeFb" className="pt-24 md:pt-32 pb-16 md:pb-24 px-4 md:px-0 overflow-hidden">
     <div className="container mx-auto">
       <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         {/* Left column - Hero text */}
@@ -53,8 +50,7 @@ const HeroFormBuilder = () => {
         </div>
 
         {/* Right column - Hero image */}
-        <div className={`w-full lg:w-1/2 relative 
-              ${isVisible ? 'opacity-100 animate-fade-in animate-delay-700' : 'opacity-0'}`}>
+        <div className={`w-full lg:w-1/2 relative`}>
           <div className="relative">
             <div className="absolute -top-10 -left-10 w-32 h-32 bg-primary-100 rounded-full filter blur-3xl opacity-70 animate-pulse"></div>
             <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-primary-200 rounded-full filter blur-3xl opacity-50 animate-pulse"></div>
