@@ -27,7 +27,7 @@ export default function DefaultLayout({
       <Header />
       <main className="grow">{children}</main>
       <Footer border={true} />
-      <LaunchingSoonCard /> {/* Add the updated LaunchingSoonCard here */}
+      {/* <LaunchingSoonCard /> Add the updated LaunchingSoonCard here */}
     </>
   );
 }
