@@ -19,11 +19,6 @@ export default function Home() {
   return (
     <>
       <HeroFormBuilder />
-      <InterfaceItsm/>
-      <FeaturesItsm id="featuresItsm"/>
-      {/* <ProcessFlowEhs id="processFlowEhs" />
-      <BenefitsEhs /> */}
-      <CtaEhs />
     </>
   );
 }

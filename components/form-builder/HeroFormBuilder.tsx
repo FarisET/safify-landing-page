@@ -17,29 +17,36 @@ const HeroFormBuilder = () => {
       <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         {/* Left column - Hero text */}
         <div className="w-full lg:w-1/2 space-y-6 md:space-y-8">
-          <div className={`inline-flex items-center py-1.5 px-3 bg-blue-100 rounded-full text-primary text-sm font-medium
-                ${isVisible ? 'opacity-100 animate-fade-in' : 'opacity-0'}`}>
+          <div className={`inline-flex items-center py-1.5 px-3 bg-blue-100 rounded-full text-primary text-sm font-medium`}>
             <CheckCircle className="w-4 h-4 mr-2" />
             <span>EHS Compliance Made Simple</span>
           </div>
 
-          <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight
-                ${isVisible ? 'opacity-100 animate-fade-in animate-delay-200' : 'opacity-0'}`}>
+          <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight`}
+            data-aos="zoom-y-out"
+            data-aos-delay={150}>
             Streamline Your EHS Compliance with <span className="text-primary">Custom Forms</span> and Offline Access
+
           </h1>
 
-          <p className={`text-lg md:text-xl text-gray-600 max-w-2xl
-                ${isVisible ? 'opacity-100 animate-fade-in animate-delay-300' : 'opacity-0'}`}>
+          <p className={`text-lg md:text-xl text-gray-600 max-w-2xl`}
+            data-aos="zoom-y-out"
+            data-aos-delay={300} >
             Create custom forms to digitize audits, inspections, and compliance reports with ease, and eliminate paper-based processes, with the convenience of filling forms offline.            </p>
 
-          <div className={`flex flex-col sm:flex-row gap-4 mt-8
-                ${isVisible ? 'opacity-100 animate-fade-in animate-delay-400' : 'opacity-0'}`}>
-            <a href="#get-started" className="px-8 py-3.5 rounded-lg bg-primary text-white font-medium text-center hover-scale shadow-blue flex items-center justify-center gap-2 group">
+          <div className={`flex flex-col sm:flex-row gap-4 mt-8`}
+            data-aos="zoom-y-out"
+            data-aos-delay={300}>
+            <a href="#get-started" className="px-8 py-3.5 rounded-lg bg-primary text-white font-medium text-center hover-scale shadow-blue flex items-center justify-center gap-2 group"
+            >
               Start For Free
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+
             </a>
-            <a href="#features" className="px-8 py-3.5 rounded-lg bg-white border border-gray-200 text-gray-700 font-medium text-center hover-scale shadow-subtle">
+            <a href="#features" className="px-8 py-3.5 rounded-lg bg-white border border-gray-200 text-gray-700 font-medium text-center hover-scale shadow-subtle"
+            >
               See Features
+
             </a>
           </div>
 
