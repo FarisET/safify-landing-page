@@ -1,3 +1,4 @@
+"use client"
 
 import { useEffect, useState } from "react";
 import { 
@@ -43,7 +44,7 @@ const benefitItems = [
   }
 ];
 
-const Benefits = () => {
+const BenefitsFormBuilder = () => {
   const [visibleItems, setVisibleItems] = useState<number[]>([]);
 
   useEffect(() => {
@@ -123,4 +124,4 @@ const Benefits = () => {
   );
 };
 
-export default Benefits;
+export default BenefitsFormBuilder;

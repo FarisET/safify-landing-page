@@ -17,7 +17,7 @@ export default function HeroItsm() {
               className="mb-6 border-y text-3xl md:text-4xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-6xl"
               data-aos="zoom-y-out"
               data-aos-delay={150}
-            >            IT Service System
+            >            IT Service Management
             </h1>
             <p
               className="mb-8 text-md md:text-lg text-gray-700"

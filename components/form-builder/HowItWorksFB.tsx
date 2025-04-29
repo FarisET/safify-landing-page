@@ -1,4 +1,6 @@
 
+"use client";
+
 import { useState, useEffect } from "react";
 import { 
   UserPlus, 
@@ -8,7 +10,7 @@ import {
   FileBarChart 
 } from "lucide-react";
 
-const HowItWorks = () => {
+const HowItWorksFB = () => {
   const [visibleStep, setVisibleStep] = useState(-1);
 
   useEffect(() => {
@@ -109,4 +111,4 @@ const HowItWorks = () => {
   );
 };
 
-export default HowItWorks;
+export default HowItWorksFB;
