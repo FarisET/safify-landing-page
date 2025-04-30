@@ -9,7 +9,8 @@ import {
   Truck,
   Warehouse,
   ClipboardCheck,
-  Shield
+  Shield,
+  CarFront
 } from "lucide-react";
 
 const ManufacturingForm = "images/Manufacturing Equipment Inspection.png";
@@ -138,6 +139,25 @@ const IndustrySolutions = () => {
         }
       ]
     },
+    {
+      icon: CarFront,
+      name: "Automobiles",
+      description: "Ensure vehicle quality, safety compliance, and manufacturing process control throughout production lifecycle.",
+      useCase: "Vehicle Quality Inspections, Component Testing, Production Line Audits, Safety Compliance Documentation",
+      image: "images/Automobiles QC Form.png",
+      compliance: [
+        {
+          standard: "IATF 16949:2016",
+          body: "International Automotive Task Force",
+          example: "Final vehicle inspection checklists with critical safety systems verification and non-conformance documentation"
+        },
+        {
+          standard: "FMVSS",
+          body: "Department of Transportation",
+          example: "Federal Motor Vehicle Safety Standards compliance forms documenting crashworthiness and crash avoidance systems"
+        }
+      ]
+    }
     // {
     //   icon: Warehouse,
     //   name: "Warehousing",
@@ -164,19 +184,19 @@ const IndustrySolutions = () => {
 
   return (
     <section id="industries" className="py-20 px-4 md:px-0">
-  <div className="px-8 mx-auto">
-    <div className="text-center max-w-3xl mx-auto mb-16">
-      <p className="text-primary font-medium mb-3">INDUSTRY SOLUTIONS</p>
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-        Tailored for Your Industry
-      </h2>
-      <p className="text-gray-600 text-lg">
-        Safify Forms adapts to the unique compliance requirements across various sectors
-      </p>
-      <p className="text-sm italic text-gray-500 mt-2">
-        <b>Disclaimer</b>: Safify does not provide certified compliance forms from regulatory bodies. Our platform enables you to build forms for data collection aligned with compliance standards.
-      </p>
-    </div>
+      <div className="px-8 mx-auto">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <p className="text-primary font-medium mb-3">INDUSTRY SOLUTIONS</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Tailored for Your Industry
+          </h2>
+          <p className="text-gray-600 text-lg">
+            Safify Forms adapts to the unique compliance requirements across various sectors
+          </p>
+          <p className="text-sm italic text-gray-500 mt-2">
+            <b>Disclaimer</b>: Safify does not provide certified compliance forms from regulatory bodies. Our platform enables you to build forms for data collection aligned with compliance standards.
+          </p>
+        </div>
 
 
         {/* Industry Tabs */}
