@@ -8,7 +8,7 @@ export default function Logo() {
         alt="Safify Logo"
         className="h-7 w-7"
       />
-      <span className="hidden sm:block text-lg text-gray-800">SAFIFY</span>
+      <span className="text-lg text-gray-800">SAFIFY</span>
 
     </Link>
   );

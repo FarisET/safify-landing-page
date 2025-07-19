@@ -15,9 +15,10 @@ export default function Home() {
   return (
     <>
       <HeroEhs />
+      {/* <BenefitsEhs /> */}
+
       <FeaturesEhs id="featuresEhs" />
       <ProcessFlowEhs id="processFlowEhs" />
-      <BenefitsEhs />
       <CtaEhs />
     </>
   );

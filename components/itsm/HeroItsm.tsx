@@ -33,7 +33,7 @@ export default function HeroItsm() {
 
               className="flex flex-col px-6 sm:flex-row justify-center gap-4">
 
-              <a href="mailto:ejaz@emergtechsolutions.sa.com" className="btn bg-primary text-white hover:bg-blue-700 px-8 py-3 text-lg">
+              <a href="mailto:sales@safify.tech" className="btn bg-primary text-white hover:bg-blue-700 px-8 py-3 text-lg">
                 Request Demo
               </a>
 
@@ -44,10 +44,10 @@ export default function HeroItsm() {
               >
                 <p className="text-gray-500 text-sm mt-1">
                   <span className="flex items-center gap-2">
-                    <FaEnvelope /> ejaz@emergtechsolutions.sa.com
+                    <FaEnvelope /> sales@safify.tech
                   </span>
                   <span className="flex items-center gap-2">
-                    <FaEnvelope /> faris@emergtechsolutions.com
+                    <FaEnvelope /> faris@safify.tech
                   </span>
 
                   <span className="flex items-center gap-2">

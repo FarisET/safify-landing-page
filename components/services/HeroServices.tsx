@@ -35,10 +35,10 @@ export default function HeroServices() {
               >
                 <p className="flex flex-col sm:flex-row gap-4 text-gray-500 text-sm mt-1">
                   <span className="flex items-center gap-2">
-                    <FaEnvelope /> ejaz@emergtechsolutions.sa.com
+                    <FaEnvelope /> sales@safify.tech
                   </span>
                   <span className="flex items-center gap-2">
-                    <FaEnvelope /> faris@emergtechsolutions.com
+                    <FaEnvelope /> faris@safify.tech
                   </span>
 
                   <span className="flex items-center gap-2">
