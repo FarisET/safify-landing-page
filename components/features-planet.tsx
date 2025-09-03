@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaArrowRight, FaCog, FaDatabase, FaMagic, FaRegCheckCircle, FaUserCheck } from 'react-icons/fa';
+import { FaArrowRight, FaCog, FaDatabase, FaMagic, FaRegCheckCircle, FaShieldAlt, FaUserCheck } from 'react-icons/fa';
 
 export default function Services() {
   return (
@@ -16,66 +16,69 @@ export default function Services() {
             </p>
           </div>
 
-          {/* Grid */}
-          <div className="grid overflow-hidden sm:grid-cols-2 lg:grid-cols-3 [&>*]:relative [&>*]:p-6 [&>*]:before:absolute [&>*]:before:bg-gray-800 [&>*]:before:[block-size:100vh] [&>*]:before:[inline-size:1px] [&>*]:before:[inset-block-start:0] [&>*]:before:[inset-inline-start:-1px] [&>*]:after:absolute [&>*]:after:bg-gray-800 [&>*]:after:[block-size:1px] [&>*]:after:[inline-size:100vw] [&>*]:after:[inset-block-start:-1px] [&>*]:after:[inset-inline-start:0] md:[&>*]:p-10">
-            <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
-                <FaRegCheckCircle className="text-primary" />
-                <span>Compliance & Audit Automation</span>
-              </h3>
-              <p className="text-[15px] text-gray-400">
-                Leverage our products and custom services to digitize and automate audits, inspections, and compliance checks, ensuring your organization meets regulatory standards with ease.
-              </p>
-            </article>
+          {/* Services Grid - 2 Rows Structure */}
+          <div className="space-y-8">
+            {/* Row 1: Compliance Automation */}
+            <div className="bg-gray-900 rounded-2xl p-8">
+              <h2 className="text-2xl font-bold text-white mb-6 text-center">Compliance Automation</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <FaRegCheckCircle className="text-primary text-2xl mx-auto mb-3" />
+                  <h3 className="text-white font-medium mb-2">Regulatory Audit Automation</h3>
+                  <p className="text-gray-400 text-sm">
+                    Digitize and automate audits, inspections, and compliance checks to meet regulatory standards with ease.
+                  </p>
+                </div>
+                <div className="text-center">
+                  <FaMagic className="text-primary text-2xl mx-auto mb-3" />
+                  <h3 className="text-white font-medium mb-2">Intelligent Form & Data Capture</h3>
+                  <p className="text-gray-400 text-sm">
+                    Build custom, forms with our form building tool with validation, policy linking and seamless audit workflow integration.
+                  </p>
+                </div>
+                <div className="text-center">
+                  <FaShieldAlt className="text-primary text-2xl mx-auto mb-3" />
+                  <h3 className="text-white font-medium mb-2">Industry-Specific Solutions</h3>
+                  <p className="text-gray-400 text-sm">
+                    Tailored audit templates and checklists for manufacturing, healthcare, and other sectors.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-            <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
-                <FaUserCheck className="text-primary" />
-                <span>Expert-Led Automation Strategy
-
-                </span>
-              </h3>
-              <p className="text-[15px] text-gray-400">
-                Our experts work with you to analyze existing processes, identify automation opportunities, and design a strategic roadmap for integrating AI and digital workflows into your enterprise ecosystem.
-              </p>
-            </article>
-
-            <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
-                <FaDatabase className="text-primary" />
-                <span>Custom Solutions</span>
-              </h3>
-              <p className="text-[15px] text-gray-400">
-                Beyond our core products, we build small, targeted digital solutions to address specific enterprise automation challenges and streamline niche operational processes.
-              </p>
-            </article>
-            <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
-                <FaMagic className="text-primary" />
-                <span>Intelligent Form & Data Capture</span>
-              </h3>
-              <p className="text-[15px] text-gray-400">
-                Utilize our Safify FormBuilder and custom development services to create dynamic, intelligent forms that simplify data collection, validation, and integration into your automated workflows.
-              </p>
-            </article>
-            <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
-                <FaCog className="text-primary" />
-                <span>AI-Powered Workflow Automation</span>
-              </h3>
-              <p className="text-[15px] text-gray-400">
-                We design and deploy intelligent workflows using AI Agents to automate complex enterprise processes, from complex calculations to repitive operational tasks.
-              </p>
-            </article>
-            <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
-                <FaArrowRight className="text-primary" />
-                <span>System Integration & Support</span>
-              </h3>
-              <p className="text-[15px] text-gray-400">
-                We provide end-to-end support for our SaaS products and automation services, including seamless integration with your existing systems to ensure a unified and efficient operational environment.
-              </p>
-            </article>
+            {/* Row 2: Workflow Automation */}
+            <div className="bg-gray-900 rounded-2xl p-8">
+              <h2 className="text-2xl font-bold text-white mb-6 text-center">Workflow Automation</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <FaUserCheck className="text-primary text-2xl mx-auto mb-3" />
+                  <h3 className="text-white font-medium mb-2">Automation Strategy</h3>
+                  <p className="text-gray-400 text-sm">
+                     We analyze your existing processes, identify automation opportunities, and design a strategic roadmap for integrating AI and digital workflows into your enterprise ecosystem.                  </p>
+                </div>
+                {/* <div className="text-center">
+                  <FaDatabase className="text-primary text-2xl mx-auto mb-3" />
+                  <h3 className="text-white font-medium mb-2">Custom Solutions</h3>
+                  <p className="text-gray-400 text-sm">
+                    Build targeted digital solutions to address specific enterprise automation challenges.
+                  </p>
+                </div> */}
+                <div className="text-center">
+                  <FaCog className="text-primary text-2xl mx-auto mb-3" />
+                  <h3 className="text-white font-medium mb-2">AI-Powered Workflows</h3>
+                  <p className="text-gray-400 text-sm">
+                    Placing the automation strategy into action, we design and deploy intelligent workflows using AI Agents to automate operational processes.
+                  </p>
+                </div>
+                <div className="text-center">
+                  <FaArrowRight className="text-primary text-2xl mx-auto mb-3" />
+                  <h3 className="text-white font-medium mb-2">System Integration & Support</h3>
+                  <p className="text-gray-400 text-sm">
+                    A secure, privacy‑first integration is established with your systems and data sources to fully realize your workflow automation goals.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* AI Workflow Diagram */}
@@ -111,7 +114,7 @@ export default function Services() {
                   <div className="flex flex-col items-center rounded-lg bg-gradient-to-t from-primary to-blue-500 px-2 py-1 shadow-lg transition-transform hover:scale-105 sm:px-4 sm:py-2">
                     <FaMagic className="mb-1 text-lg text-white sm:text-xl" />
                     <p className="text-xs font-medium text-white sm:text-sm">
-                      AI Processing & <br /> Analysis
+                      AI Processing
                     </p>
                   </div>
                 </div>
@@ -120,16 +123,16 @@ export default function Services() {
                   <div className="flex flex-col items-center rounded-lg bg-gradient-to-t from-primary to-blue-500 px-2 py-1 shadow-lg transition-transform hover:scale-105 sm:px-4 sm:py-2">
                     <FaCog className="mb-1 text-lg text-white sm:text-xl" />
                     <p className="text-xs font-medium text-white sm:text-sm">
-                      Automated Action<br /> & Routing
+                      Automated <br /> Action
                     </p>
                   </div>
                 </div>
 
                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 transform text-center">
-                  <div className="flex flex-col items-center rounded-lg bg-gradient-to-t from-primary to-blue-500 px-2 py-1 shadow-lg transition-transform hover:scale-105 sm:px-4 sm:py-2">
-                    <FaRegCheckCircle className="mb-1 text-lg text-white sm:text-xl" />
+                 <div className="flex flex-col items-center rounded-lg bg-gradient-to-t from-primary to-blue-500 px-2 py-1 shadow-lg transition-transform hover:scale-105 sm:px-4 sm:py-2">
+                    <FaDatabase className="mb-1 text-lg text-white sm:text-xl" />
                     <p className="text-xs font-medium text-white sm:text-sm">
-                      Validation &<br /> Approvals
+                      Data Output & <br /> Integration
                     </p>
                   </div>
                 </div>
@@ -138,7 +141,7 @@ export default function Services() {
                   <div className="flex flex-col items-center rounded-lg bg-gradient-to-t from-primary to-blue-500 px-2 py-1 shadow-lg transition-transform hover:scale-105 sm:px-4 sm:py-2">
                     <FaUserCheck className="mb-1 text-lg text-white sm:text-xl" />
                     <p className="text-xs font-medium text-white sm:text-sm">
-                      Human-in-the-Loop <br /> Review
+                      Human in <br /> the Loop
                     </p>
                   </div>
                 </div>

@@ -18,6 +18,9 @@ import {
   FaLink,
   FaBars,
   FaTimes,
+  FaUserCheck,
+  FaCog,
+  FaRegCheckCircle,
 } from "react-icons/fa";
 
 // Props for ProductItem
@@ -95,8 +98,8 @@ export default function Header() {
               >
                 <span
                   className={`flex cursor-pointer items-center px-4 py-2 ${isProductActive
-                      ? 'text-primary font-semibold' // Active state styling
-                      : 'text-gray-800 hover:text-primary'
+                    ? 'text-primary font-semibold' // Active state styling
+                    : 'text-gray-800 hover:text-primary'
                     }`}
                 >
                   Products
@@ -141,7 +144,7 @@ export default function Header() {
                     <ProductItem
                       href="#"
                       icon={<FaClipboardCheck size={20} />}
-                      title="Safify SAuditor"
+                      title="Safify sAuditor"
                       description="Streamline site audits and automate data collection to ensure compliance adherence."
                       isActive={false}
                     />
@@ -158,14 +161,15 @@ export default function Header() {
 
               {/* Services Dropdown */}
               <li
-                className="relative" // Added padding to cover the gap
+                className="relative"
                 onMouseEnter={handleServicesEnter}
                 onMouseLeave={handleServicesLeave}
               >
                 <span className="flex cursor-pointer items-center px-4 py-2 text-gray-800 hover:text-primary">
                   Services
                   <svg
-                    className={`ml-1 h-4 w-4 transform transition-transform duration-300 ${isServicesOpen ? "rotate-180" : ""}`}
+                    className={`ml-1 h-4 w-4 transform transition-transform duration-300 ${isServicesOpen ? "rotate-180" : ""
+                      }`}
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -180,47 +184,60 @@ export default function Header() {
                   </svg>
                 </span>
                 <div
-                  className={`absolute right-0 top-full origin-top-right transform rounded-lg bg-white text-gray-800 shadow-lg transition-all duration-300 ${ // Removed mt-2, added top-full
-                    isServicesOpen
+                  className={`absolute right-0 top-full origin-top-right transform rounded-lg bg-white text-gray-800 shadow-lg transition-all duration-300 ${isServicesOpen
                       ? "scale-100 opacity-100"
                       : "scale-95 opacity-0 pointer-events-none"
                     }`}
                   style={{ width: "720px" }}
                 >
                   <div className="grid grid-cols-3 gap-4 p-4">
+
+                    {/* --- Compliance Automation --- */}
+                    <div className="col-span-3 text-sm font-semibold text-gray-500 mb-2">
+                      Compliance Automation
+                    </div>
                     <ServiceItem
-                      icon={<FaTasks size={20} />}
-                      title="Compliance & Audit Automation"
+                      icon={<FaRegCheckCircle size={20} />}
+                      title="Regulatory Audit Automation"
                       description="Digitize and automate audits, inspections, and compliance checks."
-                    />
-                    <ServiceItem
-                      icon={<FaHandsHelping size={20} />}
-                      title="Consultation & Process Optimization"
-                      description="We analyze processes and design a strategic roadmap for your enterprise."
-                    />
-                    <ServiceItem
-                      icon={<FaCogs size={20} />}
-                      title="Custom Solutions"
-                      description="We build targeted digital solutions to address specific automation challenges."
                     />
                     <ServiceItem
                       icon={<FaFileAlt size={20} />}
                       title="Intelligent Form & Data Capture"
-                      description="Create dynamic, intelligent forms to simplify data collection and integration."
+                      description="Create dynamic, AI‑driven forms with automated validation."
+                    />
+                    <ServiceItem
+                      icon={<FaShieldAlt size={20} />}
+                      title="Industry‑Specific Solutions"
+                      description="Tailored audit templates and checklists by sector."
+                    />
+
+                    {/* divider */}
+                    <div className="col-span-3 border-t border-gray-200 my-2"></div>
+
+                    {/* --- Workflow Automation --- */}
+                    <div className="col-span-3 text-sm font-semibold text-gray-500 mb-2">
+                      Workflow Automation
+                    </div>
+                    <ServiceItem
+                      icon={<FaUserCheck size={20} />}
+                      title="Automation Strategy"
+                      description="We Analyze processes and build your AI & digital workflow roadmap."
                     />
                     <ServiceItem
                       icon={<FaBrain size={20} />}
-                      title="AI-Powered Workflow Automation"
-                      description="We design and deploy AI-powered workflows to automate complex processes."
+                      title="AI Workflows"
+                      description="We Deploy intelligent agents to automate complex processes."
                     />
                     <ServiceItem
                       icon={<FaLink size={20} />}
-                      title="System Integration & Support"
-                      description="End-to-end support for our products, including seamless system integration."
+                      title="System Integration"
+                      description="We ensure secure, privacy‑first integration across all systems and data sources."
                     />
                   </div>
                 </div>
               </li>
+
             </ul>
           </nav>
           {/* Hamburger Menu Button (visible on small screens) */}
@@ -287,7 +304,7 @@ export default function Header() {
                   icon={
                     <FaClipboardCheck size={20} />
                   }
-                  title="Safify SAuditor"
+                  title="Safify sAuditor"
                   description="Streamline site audits and data collection."
                   isActive={false}
                 />

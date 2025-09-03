@@ -52,7 +52,7 @@ export default function HeroEhs() {
                       <FaEnvelope /> faris@safify.tech
                     </span>
                     <span className="flex items-center gap-2">
-                      <FaPhone /> +966 56 176 3380
+                      <FaPhone /> +92 325 2865872
                     </span>
 
                   </p>

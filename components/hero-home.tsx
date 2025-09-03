@@ -96,7 +96,7 @@ export default function HeroHome() {
                       Safify EHS
                     </span>
                     <p className="text-sm text-gray-600 mt-1">
-                      Streamline your environmental, health, and workplace safety with our mobile-first incident management system
+                      Streamline workplace safety with our mobile-first incident management system
                     </p>
                     <span className="mt-2 tracking-normal text-primary transition-transform group-hover:translate-x-0.5">
                       -&gt;
@@ -111,7 +111,7 @@ export default function HeroHome() {
                       <Image src={SafifyLogo} alt="Safify Logo" width={45} height={45} />
                     </div>
                     <span className="text-lg font-semibold">
-                      Safify SAuditor
+                      Safify sAuditor
                     </span>
                     <p className="text-sm text-gray-600 mt-1">
                       Streamline site audits and automate data collection to ensure compliance adherence.

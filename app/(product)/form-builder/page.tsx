@@ -19,11 +19,13 @@ import BenefitsFormBuilder from "@/components/form-builder/BenefitsFormBuilder";
 import HowItWorksFB from "@/components/form-builder/HowItWorksFB";
 import IndustrySolutions from "@/components/form-builder/IndustrySolutions";
 import MobilePWA from "@/components/form-builder/MobilePwa";
+import TriadicHealthcareDiagram from "@/components/triadic_link_diagram";
 
 export default function Home() {
   return (
     <>
       <HeroFormBuilder />
+      <TriadicHealthcareDiagram />
       <IndustrySolutions />
       <MobilePWA />
     </>
