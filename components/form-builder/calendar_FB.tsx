@@ -10,7 +10,7 @@ import {
   Home,
 } from "lucide-react";
 
-const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+const days = ["Monday", "Tuesday", "Wednesday", "Thursday"];
 
 const sampleEvents = [
   {
@@ -18,21 +18,12 @@ const sampleEvents = [
     dayIndex: 1, // Monday
     date: 1,
     time: "09:15am",
-    title: "Waste Management",
-    person: "Hamza Iqbal",
-    form: "Infection Control Audit",
-    location: "Radiology, Main Branch",
-  },
-  {
-    id: 2,
-    dayIndex: 1,
-    date: 8,
-    time: "01:15pm",
-    title: "Complete Form",
+    title: "Infection Control Audit",
     person: "Fizza Ahmed",
-    form: "Infection Control Audit",
+    form: "Infection Control Checklist",
     location: "Paediatric, Main Branch",
   },
+ 
 ];
 
 export default function CalendarFB() {
@@ -42,8 +33,8 @@ export default function CalendarFB() {
     <div className="w-full max-w-[1200px] h-[700px] mx-auto p-6">
       <div className="w-full h-full bg-white border border-slate-200 rounded-2xl shadow-sm p-6 relative overflow-hidden">
         {/* Header */}
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-semibold text-slate-800">My Calendar</h2>
+        {/* <div className="flex items-center justify-between mb-6">
+          <h2 className="text-2xl font-semibold text-slate-800">Calendar</h2>
 
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-2">
@@ -54,53 +45,60 @@ export default function CalendarFB() {
 
             <div className="ml-6 text-center text-lg font-semibold">September 2025</div>
 
-            <div className="ml-6 flex items-center gap-2">
-              <button className="px-3 py-2 rounded-lg bg-blue-600 text-white">Month</button>
-              <button className="px-3 py-2 rounded-lg border border-slate-200">Week</button>
-              <button className="px-3 py-2 rounded-lg border border-slate-200">Day</button>
-              <button className="px-3 py-2 rounded-lg border border-slate-200">List Week</button>
-              <button className="px-3 py-2 rounded-lg border border-slate-200">List Month</button>
-            </div>
+          
           </div>
-        </div>
+        </div> */}
 
         {/* Calendar grid */}
         <div className="w-full h-[520px] border rounded-lg overflow-hidden">
-          <div className="grid grid-cols-7 bg-slate-50 border-b border-slate-100">
+          {/* Days header */}
+          <div className="grid grid-cols-5 bg-slate-50 border-b border-slate-100">
             {days.map((d) => (
-              <div key={d} className="py-3 text-center font-semibold text-slate-700 border-r last:border-r-0">
+              <div
+                key={d}
+                className="py-3 text-center font-semibold text-slate-700 border-r last:border-r-0"
+              >
                 {d}
               </div>
             ))}
           </div>
 
-          {/* 6 rows of weeks */}
-          <div className="grid grid-cols-7 grid-rows-6 h-[460px]">
-            {Array.from({ length: 42 }).map((_, idx) => {
-              const day = idx + 1 - 1; // simple placement for demo
-              const dayIndex = idx % 7;
+          {/* 4 weeks */}
+          <div className="grid grid-cols-1 grid-rows-1 h-[400px]">
+            {Array.from({ length: 10 }).map((_, idx) => {
+              const dayIndex = idx % 5;
+              
               const eventsForCell = sampleEvents.filter((ev) => ev.dayIndex === dayIndex);
 
               return (
-                <div key={idx} className="border-r border-b border-slate-100 p-3 relative bg-white">
-                  <div className="text-xs text-slate-400">{(idx % 31) + 1}</div>
+                <div
+                  key={idx}
+                  className="border-r border-b border-slate-100 p-4 relative bg-white hover:bg-slate-50 transition"
+                >
+                  {/* Day number */}
+                  <div className="text-sm font-medium text-slate-500">
+                    {(idx % 30) + 1}
+                  </div>
 
-                  {/* render event pills only for demonstration days */}
-                  {eventsForCell.slice(0, 2).map((ev) => (
-                    <button
-                      key={ev.id}
-                      onClick={() => setFocusedEvent(ev)}
-                      className="mt-2 block text-left w-full rounded-md py-1 px-2 bg-amber-400 text-white text-sm font-medium shadow-inner"
-                    >
-                      <span className="font-semibold mr-2">{ev.time}</span>
-                      <span className="align-middle">{ev.title}</span>
-                    </button>
-                  ))}
+                  {/* Events */}
+                  <div className="mt-2 space-y-2">
+                    {eventsForCell.slice(0, 3).map((ev) => (
+                      <button
+                        key={ev.id}
+                        onClick={() => setFocusedEvent(ev)}
+                        className="w-full text-left rounded-md py-1.5 px-2 bg-amber-400 text-white text-sm font-medium shadow-sm hover:bg-amber-500"
+                      >
+                        <span className="font-semibold mr-2">{ev.time}</span>
+                        <span>{ev.title}</span>
+                      </button>
+                    ))}
+                  </div>
                 </div>
               );
             })}
           </div>
         </div>
+
 
         {/* Focused overlay item */}
         {focusedEvent && (
@@ -109,8 +107,6 @@ export default function CalendarFB() {
               <div>
                 <div className="text-xs text-slate-500">{focusedEvent.time} • {focusedEvent.date} September</div>
                 <div className="mt-2 text-sm font-semibold text-slate-800">{focusedEvent.title}</div>
-                <div className="mt-1 text-sm text-slate-600">{focusedEvent.form}</div>
-
                 <div className="mt-4 space-y-2">
                   <div className="flex items-center gap-2 text-sm text-slate-700">
                     <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-slate-50">
