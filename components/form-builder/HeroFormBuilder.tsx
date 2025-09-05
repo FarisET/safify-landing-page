@@ -18,20 +18,20 @@ const HeroFormBuilder = () => {
         <div className="w-full lg:w-1/2 space-y-6 md:space-y-8">
           <div className={`inline-flex items-center py-1.5 px-3 bg-blue-100 rounded-full text-primary text-sm font-medium`}>
             <CheckCircle className="w-4 h-4 mr-2" />
-            <span>EHS Compliance Made Simple</span>
+            <span>Evidence-based compliance tracking with on-field data collection</span>
           </div>
 
-          <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight`}
+          <h1 className={`text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900 leading-tight`}
             data-aos="zoom-y-out"
             data-aos-delay={150}>
-            Streamline Your EHS Compliance with <span className="text-primary">Custom Forms</span> and Offline Access
+            Streamline Site Audits & Compliance with <span className="text-primary">Custom Forms</span> and Offline Access
 
           </h1>
 
-          <p className={`text-lg md:text-xl text-gray-600 max-w-2xl`}
+          {/* <p className={`text-lg md:text-xl text-gray-600 max-w-2xl`}
             data-aos="zoom-y-out"
-            data-aos-delay={300} >
-            Create custom forms to digitize audits, inspections, and compliance reports with ease, and eliminate paper-based processes, with the convenience of filling forms offline.            </p>
+            data-aos-delay={300} > 
+            {/* Create custom forms to digitize audits, inspections, and compliance reports with ease, and eliminate paper-based processes, with the convenience of filling forms offline.            </p> */}
 
           {/* <div className={`flex flex-col sm:flex-row gap-4 mt-8`}
             data-aos="zoom-y-out"

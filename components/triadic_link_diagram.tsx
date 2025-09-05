@@ -75,7 +75,7 @@ export default function TriadicHealthcareDiagram(): JSX.Element {
             <div className="w-full max-w-5xl mx-auto">
                 <div className="mb-6">
                     <h1 className="text-2xl md:text-3xl font-semibold tracking-tight text-slate-800">
-                        Triadic Linkage: <span className="text-blue-600">Form → Control → Clause</span>
+                        How it works: <span className="text-blue-600">Form → Control → Clause</span>
                     </h1>
                     <p className="text-slate-600 max-w-2xl mt-2">
                         Each field answer becomes auditable evidence: a question connects to an internal control, which maps to one or more clauses.

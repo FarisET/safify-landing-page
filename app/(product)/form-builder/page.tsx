@@ -20,14 +20,20 @@ import HowItWorksFB from "@/components/form-builder/HowItWorksFB";
 import IndustrySolutions from "@/components/form-builder/IndustrySolutions";
 import MobilePWA from "@/components/form-builder/MobilePwa";
 import TriadicHealthcareDiagram from "@/components/triadic_link_diagram";
+import FAQFormBuilder from "@/components/form-builder/FAQFormBuilder";
+import AuditModuleSection from "@/components/form-builder/audit_module_section";
+import FeaturesSectionFB from "@/components/form-builder/features_form_builder";
 
 export default function Home() {
   return (
     <>
       <HeroFormBuilder />
       <TriadicHealthcareDiagram />
+      <AuditModuleSection />
+      <FeaturesSectionFB />
       <IndustrySolutions />
       <MobilePWA />
+      <FAQFormBuilder />
     </>
   );
 }
