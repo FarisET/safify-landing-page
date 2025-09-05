@@ -231,19 +231,7 @@ export default function AuditModuleSection(): JSX.Element {
           </svg>
         </motion.div>
 
-        {/* Bottom CTA Section */}
-        <motion.div 
-          className="text-center mt-16"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-        >
-          <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200/50">
-            <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
-            <span className="text-sm font-medium text-slate-600">Trusted by 500+ organizations worldwide</span>
-          </div>
-        </motion.div>
-
+       
       </div>
     </section>
   );

@@ -7,6 +7,7 @@ import ResponseTypesCard from "./response_type_card"; // for "10+ Data types"
 import QuestionItemFB from "./question_item_FB";
 import LogicRuleFB from "./logic_rule_FB";
 import CalendarFB from "./calendar_FB";
+import ComplianceTrackingCard from "./compliance_card_FB";
 
 const featureItems = [
   {
@@ -53,13 +54,14 @@ const featureItems = [
     title: "Compliance Tracking",
     description: "Link questions and answers with compliance clauses.",
     component: (
-      <Image
-        src="/images/compliance.png"
-        alt="Compliance mockup"
-        width={500}
-        height={400}
-        className="w-full h-auto object-cover"
-      />
+      // <Image
+      //   src="/images/compliance.png"
+      //   alt="Compliance mockup"
+      //   width={500}
+      //   height={400}
+      //   className="w-full h-auto object-cover"
+      // />
+      <ComplianceTrackingCard/>
     ),
   },
   {

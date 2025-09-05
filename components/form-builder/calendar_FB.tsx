@@ -10,13 +10,13 @@ import {
   Home,
 } from "lucide-react";
 
-const days = ["Monday", "Tuesday", "Wednesday", "Thursday"];
+const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
 const sampleEvents = [
   {
     id: 1,
     dayIndex: 1, // Monday
-    date: 1,
+    date: 2,
     time: "09:15am",
     title: "Infection Control Audit",
     person: "Fizza Ahmed",
@@ -30,7 +30,7 @@ export default function CalendarFB() {
   const [focusedEvent, setFocusedEvent] = useState(sampleEvents[0]);
 
   return (
-    <div className="w-full max-w-[1200px] h-[700px] mx-auto p-6">
+    <div className="w-full max-w-[1200px] h-[410px] mx-auto p-6">
       <div className="w-full h-full bg-white border border-slate-200 rounded-2xl shadow-sm p-6 relative overflow-hidden">
         {/* Header */}
         {/* <div className="flex items-center justify-between mb-6">
@@ -105,7 +105,7 @@ export default function CalendarFB() {
           <div className="absolute top-28 right-10 w-[320px] bg-white border border-slate-200 rounded-2xl shadow-2xl p-4 z-50">
             <div className="flex items-start justify-between gap-3">
               <div>
-                <div className="text-xs text-slate-500">{focusedEvent.time} • {focusedEvent.date} September</div>
+                <div className="text-xs text-slate-500">{focusedEvent.time} • 2 September</div>
                 <div className="mt-2 text-sm font-semibold text-slate-800">{focusedEvent.title}</div>
                 <div className="mt-4 space-y-2">
                   <div className="flex items-center gap-2 text-sm text-slate-700">
@@ -143,11 +143,11 @@ export default function CalendarFB() {
               <div className="text-sm text-slate-400">●</div>
             </div>
 
-            <div className="mt-4 flex items-center gap-2">
+            {/* <div className="mt-4 flex items-center gap-2">
               <button className="px-3 py-2 bg-blue-600 text-white rounded-lg text-sm">Open</button>
               <button className="px-3 py-2 border border-slate-200 rounded-lg text-sm">Edit</button>
               <button className="px-3 py-2 border border-slate-200 rounded-lg text-sm">Close</button>
-            </div>
+            </div> */}
           </div>
         )}
 
