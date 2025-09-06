@@ -236,7 +236,7 @@ const IndustrySolutions = () => {
         >
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-2/3">
-              <div className="relative bg-white overflow-hidden">
+              <div className="relative bg-transparent overflow-hidden">
                 <img
                   src={industries[activeTab].image}
                   alt={industries[activeTab].name}
