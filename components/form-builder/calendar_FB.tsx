@@ -23,7 +23,7 @@ const sampleEvents = [
     form: "Infection Control Checklist",
     location: "Paediatric, Main Branch",
   },
- 
+
 ];
 
 export default function CalendarFB() {
@@ -49,8 +49,8 @@ export default function CalendarFB() {
           </div>
         </div> */}
 
-        {/* Calendar grid */}
-        <div className="w-full h-[520px] border rounded-lg overflow-hidden">
+        {/* Calendar grid - hide on small screens */}
+        <div className="hidden sm:block w-full h-[520px] border rounded-lg overflow-hidden">
           {/* Days header */}
           <div className="grid grid-cols-5 bg-slate-50 border-b border-slate-100">
             {days.map((d) => (
@@ -67,7 +67,6 @@ export default function CalendarFB() {
           <div className="grid grid-cols-1 grid-rows-1 h-[400px]">
             {Array.from({ length: 10 }).map((_, idx) => {
               const dayIndex = idx % 5;
-              
               const eventsForCell = sampleEvents.filter((ev) => ev.dayIndex === dayIndex);
 
               return (
@@ -100,14 +99,21 @@ export default function CalendarFB() {
         </div>
 
 
+
         {/* Focused overlay item */}
+        {/* Focused overlay item - always visible */}
         {focusedEvent && (
-          <div className="absolute top-28 right-10 w-[320px] bg-white border border-slate-200 rounded-2xl shadow-2xl p-4 z-50">
+          <div className="md:absolute md:top-28 md:right-10 md:top-20 md:left-1/2 md:-translate-x-1/2 md:translate-x-0 w-[90%] sm:w-[320px] bg-white border border-slate-200 rounded-2xl shadow-2xl p-4 z-50">
             <div className="flex items-start justify-between gap-3">
               <div>
-                <div className="text-xs text-slate-500">{focusedEvent.time} • 2 September</div>
-                <div className="mt-2 text-sm font-semibold text-slate-800">{focusedEvent.title}</div>
+                <div className="text-xs text-slate-500">
+                  {focusedEvent.time} • 2 September
+                </div>
+                <div className="mt-2 text-sm font-semibold text-slate-800">
+                  {focusedEvent.title}
+                </div>
                 <div className="mt-4 space-y-2">
+                  {/* Person */}
                   <div className="flex items-center gap-2 text-sm text-slate-700">
                     <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-slate-50">
                       <User size={16} />
@@ -118,6 +124,7 @@ export default function CalendarFB() {
                     </div>
                   </div>
 
+                  {/* Form */}
                   <div className="flex items-center gap-2 text-sm text-slate-700">
                     <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-slate-50">
                       <FileText size={16} />
@@ -128,6 +135,7 @@ export default function CalendarFB() {
                     </div>
                   </div>
 
+                  {/* Location */}
                   <div className="flex items-center gap-2 text-sm text-slate-700">
                     <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-slate-50">
                       <Home size={16} />
@@ -139,15 +147,8 @@ export default function CalendarFB() {
                   </div>
                 </div>
               </div>
-
               <div className="text-sm text-slate-400">●</div>
             </div>
-
-            {/* <div className="mt-4 flex items-center gap-2">
-              <button className="px-3 py-2 bg-blue-600 text-white rounded-lg text-sm">Open</button>
-              <button className="px-3 py-2 border border-slate-200 rounded-lg text-sm">Edit</button>
-              <button className="px-3 py-2 border border-slate-200 rounded-lg text-sm">Close</button>
-            </div> */}
           </div>
         )}
 

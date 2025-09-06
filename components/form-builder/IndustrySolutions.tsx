@@ -10,7 +10,9 @@ import {
   Warehouse,
   ClipboardCheck,
   Shield,
-  CarFront
+  CarFront,
+  UtensilsCrossed,
+  HospitalIcon,
 } from "lucide-react";
 
 const ManufacturingForm = "images/Manufacturing Equipment Inspection.png";
@@ -43,6 +45,50 @@ const IndustrySolutions = () => {
   }, []);
 
   const industries = [
+    {
+      "icon": HospitalIcon,
+      "name": "Healthcare",
+      "description": "Ensure infection prevention and control measures are implemented consistently to safeguard patients, healthcare workers, and facilities.",
+      "useCase": "Infection Control Checklists, Hospital Hygiene Audits, PPE Usage Verification, Clinical Safety Rounds",
+      "image": "images/hospital-industry.jpg",
+      "compliance": [
+        {
+          "standard": "ISO 13485:2016",
+          "body": "International Organization for Standardization",
+          "example": "Checklists verifying sterilization practices, cleanroom hygiene, and infection prevention protocols for medical device handling"
+        },
+        {
+          "standard": "WHO IPC Core Components",
+          "body": "World Health Organization",
+          "example": "Forms tracking hand hygiene audits, surface disinfection logs, and healthcare-associated infection (HAI) prevention measures"
+        },
+        {
+          "standard": "SHCC Infection Control Guidelines",
+          "body": "Sindh Healthcare Commission (Pakistan)",
+          "example": "Compliance forms ensuring hospitals follow infection control standards including waste disposal, isolation procedures, and PPE usage monitoring"
+        }
+      ]
+    },
+    {
+      "icon": UtensilsCrossed,
+      "name": "Food Industry",
+      "description": "Maintain hygienic production environments with PPE compliance, preventing contamination and ensuring worker and consumer safety.",
+      "useCase": "PPE Compliance Checklists, Hygiene Inspections, Food Safety Audits, Contamination Risk Assessments",
+      "image": "images/food-industry-ppe-form.jpg",
+      "compliance": [
+        {
+          "standard": "ISO 22000:2018",
+          "body": "International Organization for Standardization",
+          "example": "PPE inspection checklists ensuring food handlers wear protective clothing, gloves, masks, and footwear as part of food safety management systems"
+        },
+        {
+          "standard": "21 CFR Part 117",
+          "body": "FDA (Pakistan Adaptation)",
+          "example": "Compliance forms verifying personnel hygiene, hair restraints, glove usage, and sanitary clothing to prevent contamination during food processing"
+        }
+      ]
+    },
+   
     {
       icon: HardHat,
       name: "Construction",
@@ -82,44 +128,7 @@ const IndustrySolutions = () => {
         }
       ]
     },
-    // {
-    //   icon: FlaskConical,
-    //   name: "Chemical",
-    //   description: "Ensure proper handling procedures, safety data sheet compliance, and hazard assessments.",
-    //   useCase: "Hazardous Material Tracking, Safety Data Sheet Audits, Spill Response Protocols",
-    //   image: "/api/placeholder/800/500",
-    //   compliance: [
-    //     {
-    //       standard: "REACH",
-    //       body: "European Chemicals Agency",
-    //       example: "Chemical inventory forms and substance registration documentation for EU market access"
-    //     },
-    //     {
-    //       standard: "HAZCOM 2012",
-    //       body: "OSHA",
-    //       example: "GHS-compliant labeling verification and safety data sheet management forms"
-    //     }
-    //   ]
-    // },
-    // {
-    //   icon: Building2,
-    //   name: "Facilities",
-    //   description: "Monitor building systems, track maintenance, and document safety compliance.",
-    //   useCase: "Facility Audits, Maintenance Inspections, Fire Safety Compliance",
-    //   image: "/api/placeholder/800/500",
-    //   compliance: [
-    //     {
-    //       standard: "NFPA 101",
-    //       body: "National Fire Protection Association",
-    //       example: "Life Safety Code compliance checklists for emergency lighting and evacuation route inspection"
-    //     },
-    //     {
-    //       standard: "ADA",
-    //       body: "Americans with Disabilities Act",
-    //       example: "Accessibility compliance audit forms to ensure facilities meet required standards"
-    //     }
-    //   ]
-    // },
+
     {
       icon: Truck,
       name: "Logistics",
@@ -158,6 +167,9 @@ const IndustrySolutions = () => {
         }
       ]
     }
+
+
+
     // {
     //   icon: Warehouse,
     //   name: "Warehousing",
@@ -185,7 +197,7 @@ const IndustrySolutions = () => {
   return (
     <section id="industries" className="py-20 px-4 md:px-0">
       <div className="px-8 mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="md:text-center max-w-3xl mx-auto mb-16">
           <p className="text-primary font-medium mb-3">INDUSTRY SOLUTIONS</p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Tailored for Your Industry
@@ -224,18 +236,26 @@ const IndustrySolutions = () => {
         >
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-2/3">
-              <img
-                src={industries[activeTab].image}
-                alt={industries[activeTab].name}
-                className="w-full h-full object-contain object-left-top"
-                style={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  minHeight: "300px",
-                  display: "block" // prevents extra space below image
-                }}
-              />
+              <div className="relative bg-white overflow-hidden">
+                <img
+                  src={industries[activeTab].image}
+                  alt={industries[activeTab].name}
+                  className="w-full h-full object-contain object-left-top"
+                  style={{
+                    maxWidth: "100%",
+                    maxHeight: "100%",
+                    minHeight: "300px",
+                    display: "block", // prevents extra space below image
+                  }}
+                />
+
+                {/* Bottom fade effect */}
+                <div className="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+              </div>
             </div>
+
+
+
             <div className="lg:w-1/2 md:px-8 px-6 flex flex-col items-start justify-start">
               <div className="flex items-start gap-3 mb-3">
                 <div className="p-2 rounded-lg bg-blue-100">

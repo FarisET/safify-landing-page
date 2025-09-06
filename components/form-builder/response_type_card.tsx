@@ -25,7 +25,7 @@ const responseTypes = [
 
 export default function ResponseTypesCard() {
   return (
-    <div className="relative w-[500px] h-[400px] mx-auto transform rotate-0 hover:rotate-1 transition-transform duration-300">
+    <div className="relative w-[500px] h-[400px] mx-auto">
       <div className="w-full h-full bg-white border border-slate-200 rounded-2xl shadow-xl p-6 flex flex-col">
         <h3 className="text-base font-semibold text-slate-800 mb-4">
           Response Types

@@ -16,7 +16,7 @@ export default function QuestionItemFB() {
   const [selectedAction, setSelectedAction] = useState<"pass" | "fail">("pass");
 
   return (
-    <div className="relative w-[500px] h-[400px] mx-auto transform rotate-0 hover:rotate-0 transition-transform duration-300 scale-[0.92]">
+    <div className="relative sm:w-[350px] sm:h-[300px] md:w-[500px] md:h-[400px] mx-auto transform rotate-0 hover:rotate-0 transition-transform duration-300 scale-[0.92]">
       <div className="w-full h-full bg-white border border-slate-200 rounded-2xl shadow-xl p-4 flex flex-col gap-3 overflow-hidden">
         {/* scrollable content area */}
         <div className="flex-1 overflow-y-auto pr-2">
@@ -108,7 +108,7 @@ export default function QuestionItemFB() {
                 } text-sm`}
               >
                 <CheckSquare size={14} />
-                <span className="text-sm">PASS (isViolated: false)</span>
+                <span className="text-sm">PASS</span>
               </button>
 
               <button
@@ -118,7 +118,7 @@ export default function QuestionItemFB() {
                 } text-sm text-slate-700`}
               >
                 <XCircle size={14} />
-                <span className="text-sm">FAIL (isViolated: true)</span>
+                <span className="text-sm">FAIL</span>
               </button>
             </div>
           </div>

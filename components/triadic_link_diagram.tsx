@@ -71,23 +71,25 @@ export default function TriadicHealthcareDiagram(): JSX.Element {
 
 
     return (
-        <div className="w-full min-h-[520px] grid place-items-center p-6 bg-gradient-to-br from-slate-50 to-slate-100">
+        <section id="multi-framework-audit" className="w-full min-h-[520px] grid place-items-center p-6 bg-gradient-to-br from-slate-50 to-slate-100">
             <div className="w-full max-w-5xl mx-auto">
-                <div className="mb-6">
-                    <h1 className="text-2xl md:text-3xl font-semibold tracking-tight text-slate-800">
-                        How it works: <span className="text-blue-600">Form → Control → Clause</span>
+                <div className="mb-6 md:justify-items-center">
+                    <h1 className="text-2xl md:text-3xl font-semibold tracking-tight text-slate-800 md:text-center">
+                        How it works: <span className="text-blue-600">Form → Control → Regulation</span>
                     </h1>
-                    <p className="text-slate-600 max-w-2xl mt-2">
-                        Each field answer becomes auditable evidence: a question connects to an internal control, which maps to one or more clauses.
+                    <p className="text-slate-600 max-w-2xl mt-2 md:text-center">
+                        Each form answer becomes auditable evidence: a question connects to an internal control, which maps to one or more clauses
+                        - <strong><em>multi-framework compliance made simple</em></strong>.
                     </p>
+
                 </div>
 
                 <div className="relative rounded-2xl bg-white p-4 md:p-6 border border-slate-200 shadow-sm">
                     <svg
-                        viewBox="0 0 1000 600"
+                        viewBox="0 0 1000 650"
                         role="img"
                         aria-label="Animated diagram showing a Form Question node linking to an Internal Control, which fans out to three clauses"
-                        className="w-full h-[360px] md:h-[420px]"
+                        className="w-full"
                     >
                         <defs>
                             <filter id="glow">
@@ -127,13 +129,22 @@ export default function TriadicHealthcareDiagram(): JSX.Element {
 
                         {/* Nodes */}
                         {/* Image node */}
+                        {/* Title placed above the node */}
+                        <text
+                            x={Q.x + 25}    // tweak so it aligns with image
+                            y={Q.y - 100}   // position above the image box
+                            textAnchor="middle"
+                            className="fill-blue-600 text-md font-bold"
+                        >
+                            Form
+                        </text>
                         <foreignObject
                             x={Q.x - 100}   // shift left so the image is centered around Q.x
                             y={Q.y - 80}    // shift up so the image is centered around Q.y
                             width={250}     // explicit width
                             height={214}    // explicit height
                         >
-                            <div className="w-full h-full flex items-center justify-center">
+                            <div className="flex flex-col w-full h-full items-center justify-center">
                                 <Image
                                     src={FormQuestionImg}
                                     alt="Primary Forms Interface"
@@ -142,6 +153,7 @@ export default function TriadicHealthcareDiagram(): JSX.Element {
                                     style={{ width: "100%", height: "100%", objectFit: "contain" }}
                                 />
                             </div>
+
                         </foreignObject>
 
                         {/* Evidence node */}
@@ -180,7 +192,15 @@ export default function TriadicHealthcareDiagram(): JSX.Element {
                         </foreignObject>
 
 
-
+                        {/* Title for Internal Control */}
+                        <text
+                            x={C.x}
+                            y={C.y - 100}
+                            textAnchor="middle"
+                            className="fill-blue-600 text-md font-bold"
+                        >
+                            Internal Control/Policy
+                        </text>
                         <foreignObject x={C.x - 120} y={C.y - 42} width="240" height="110">
                             <div className={`${nodeStyles} ${glow} text-slate-800`}>
                                 <div className="text-xs uppercase tracking-wide text-slate-500">Internal Control</div>
@@ -189,6 +209,16 @@ export default function TriadicHealthcareDiagram(): JSX.Element {
                             </div>
                         </foreignObject>
 
+
+                        {/* Title for Regulatory Clause 2 */}
+                        <text
+                            x={R2.x}
+                            y={R2.y - 200}
+                            textAnchor="middle"
+                            className="fill-blue-600 text-md font-bold"
+                        >
+                            Regulatory Clause
+                        </text>
                         <foreignObject x={R1.x - 150} y={R1.y - 40} width="300" height="115">
                             <div className={`${nodeStyles} text-slate-800`}>
                                 <div className="text-xs uppercase tracking-wide text-slate-500">Regulatory Clause</div>
@@ -217,6 +247,6 @@ export default function TriadicHealthcareDiagram(): JSX.Element {
 
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

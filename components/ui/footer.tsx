@@ -214,6 +214,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
                 </a>
               </li>
             </ul>
+
           </div>
         </div>
       </div>

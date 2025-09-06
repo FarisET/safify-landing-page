@@ -16,7 +16,7 @@ export default function LogicRuleFB() {
   const [selectedAction, setSelectedAction] = useState<"pass" | "fail">("pass");
 
   return (
-    <div className="relative w-[500px] h-[405px] mx-auto transform rotate-0 hover:rotate-0 transition-transform duration-300 scale-[0.92]">
+    <div className="relative sm:w-[350px] sm:h-[305px] md:w-[500px] md:h-[405px] mx-auto transform rotate-0 hover:rotate-0 transition-transform duration-300 scale-[0.92]">
       <div className="w-full h-full bg-white border border-slate-200 rounded-2xl shadow-xl p-4 flex flex-col gap-3 overflow-hidden">
         {/* scrollable content area */}
         <div className="flex-1 overflow-y-auto pr-2">

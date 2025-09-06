@@ -21,7 +21,10 @@ import {
   FaUserCheck,
   FaCog,
   FaRegCheckCircle,
+  FaEnvelope,
 } from "react-icons/fa";
+import { CheckCircle } from "react-feather";
+import { CheckCheckIcon, Scale } from "lucide-react";
 
 // Props for ProductItem
 interface ProductItemProps {
@@ -37,6 +40,8 @@ interface ServiceItemProps {
   icon: ReactNode;
   title: string;
   description: string;
+  href: string;
+
 }
 
 // Props for MobileAccordion
@@ -127,34 +132,36 @@ export default function Header() {
                   style={{ width: "520px" }}
                 >
                   <div className="grid grid-cols-2 gap-4 p-4">
+
+                    <ProductItem
+                      href="/#audit-and-compliance"
+                      icon={<Scale size={20} />}
+                      title="Audit & Compliance"
+                      description="Streamline site audits and automate data collection to ensure compliance adherence."
+                      isActive={false}
+                    />
+                    <ProductItem
+                      href="/#features_form_builder"
+                      icon={<FaWrench size={20} />}
+                      title="Form Builder"
+                      description="Create audits, inspections, and checklists. Share with your team and access offline."
+                      isActive={currentPath.startsWith('/form-builder')}
+                    />
                     <ProductItem
                       href="/it-service-management"
                       icon={<FaBolt size={20} />}
-                      title="Safify ITSM"
+                      title="IT Service Management"
                       description="Streamline IT operations and support with structured service processes."
                       isActive={currentPath.startsWith('/it-service-management')}
                     />
                     <ProductItem
                       href="/ehs-incident-management"
                       icon={<FaShieldAlt size={20} />}
-                      title="Safify EHS"
+                      title="EHS Incident Managment"
                       description="Ensure workplace safety and compliance with our mobile-first incident management."
                       isActive={currentPath.startsWith('/ehs-incident-management')}
                     />
-                    <ProductItem
-                      href="#"
-                      icon={<FaClipboardCheck size={20} />}
-                      title="Safify sAuditor"
-                      description="Streamline site audits and automate data collection to ensure compliance adherence."
-                      isActive={false}
-                    />
-                    <ProductItem
-                      href="/form-builder"
-                      icon={<FaWrench size={20} />}
-                      title="Safify FormBuilder"
-                      description="Create audits, inspections, and checklists. Share with your team and access offline."
-                      isActive={currentPath.startsWith('/form-builder')}
-                    />
+
                   </div>
                 </div>
               </li>
@@ -185,8 +192,8 @@ export default function Header() {
                 </span>
                 <div
                   className={`absolute right-0 top-full origin-top-right transform rounded-lg bg-white text-gray-800 shadow-lg transition-all duration-300 ${isServicesOpen
-                      ? "scale-100 opacity-100"
-                      : "scale-95 opacity-0 pointer-events-none"
+                    ? "scale-100 opacity-100"
+                    : "scale-95 opacity-0 pointer-events-none"
                     }`}
                   style={{ width: "720px" }}
                 >
@@ -197,19 +204,22 @@ export default function Header() {
                       Compliance Automation
                     </div>
                     <ServiceItem
-                      icon={<FaRegCheckCircle size={20} />}
+                      icon={<Scale size={20} />}
                       title="Regulatory Audit Automation"
                       description="Digitize and automate audits, inspections, and compliance checks."
+                      href="#multi-framework-audit"
                     />
                     <ServiceItem
                       icon={<FaFileAlt size={20} />}
                       title="Intelligent Form & Data Capture"
-                      description="Create dynamic, AI‑driven forms with automated validation."
+                      description="Create dynamic forms with automated validation."
+                      href='#features_form_builder'
                     />
                     <ServiceItem
                       icon={<FaShieldAlt size={20} />}
-                      title="Industry‑Specific Solutions"
+                      title="Industry-Specific Solutions"
                       description="Tailored audit templates and checklists by sector."
+                      href="#industries"
                     />
 
                     {/* divider */}
@@ -223,19 +233,35 @@ export default function Header() {
                       icon={<FaUserCheck size={20} />}
                       title="Automation Strategy"
                       description="We Analyze processes and build your AI & digital workflow roadmap."
+                      href="#"
                     />
                     <ServiceItem
                       icon={<FaBrain size={20} />}
                       title="AI Workflows"
                       description="We Deploy intelligent agents to automate complex processes."
+                      href="#"
+
                     />
                     <ServiceItem
                       icon={<FaLink size={20} />}
                       title="System Integration"
                       description="We ensure secure, privacy‑first integration across all systems and data sources."
+                      href="#"
+
                     />
                   </div>
                 </div>
+              </li>
+
+              {/* Contact Us Button */}
+              <li className="ml-4">
+                <a
+                  href="mailto:faris@safify.tech"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-sm hover:shadow-md"
+                >
+                  <FaEnvelope className="text-base" />
+                  <span>Contact Us</span>
+                </a>
               </li>
 
             </ul>
@@ -286,35 +312,36 @@ export default function Header() {
             <ul className="flex flex-col space-y-2">
               <MobileAccordion title="Products">
                 <ProductItem
+                  href="/#audit-and-compliance"
+                  icon={
+                    <Scale size={20} />
+                  }
+                  title="Audit & Compliance"
+                  description="Streamline site audits and data collection."
+                  isActive={false}
+                />
+                <ProductItem
+                  href="/#features_form_builder"
+                  icon={<FaWrench size={20} />}
+                  title="Form Builder"
+                  description="Create audits, inspections, and checklists."
+                  isActive={currentPath.startsWith('/form-builder')}
+                />
+                <ProductItem
                   href="/it-service-management"
                   icon={<FaBolt size={20} />}
-                  title="Safify ITSM"
+                  title="IT Service Management"
                   description="Streamline IT operations and support."
                   isActive={currentPath.startsWith('/it-service-management')}
                 />
                 <ProductItem
                   href="/ehs-incident-management"
                   icon={<FaShieldAlt size={20} />}
-                  title="Safify EHS"
+                  title="EHS Incident Managment"
                   description="Ensure workplace safety and compliance."
                   isActive={currentPath.startsWith('/ehs-incident-management')}
                 />
-                <ProductItem
-                  href="#"
-                  icon={
-                    <FaClipboardCheck size={20} />
-                  }
-                  title="Safify sAuditor"
-                  description="Streamline site audits and data collection."
-                  isActive={false}
-                />
-                <ProductItem
-                  href="/form-builder"
-                  icon={<FaWrench size={20} />}
-                  title="Safify FormBuilder"
-                  description="Create audits, inspections, and checklists."
-                  isActive={currentPath.startsWith('/form-builder')}
-                />
+
               </MobileAccordion>
 
               <MobileAccordion title="Services">
@@ -322,33 +349,56 @@ export default function Header() {
                   icon={<FaTasks size={20} />}
                   title="Compliance & Audit Automation"
                   description="Digitize audits and compliance checks."
+                  href="#"
+
                 />
                 <ServiceItem
                   icon={<FaHandsHelping size={20} />}
                   title="Consultation & Process Optimization"
                   description="We design a strategic roadmap for your enterprise."
+                  href="#"
+
                 />
                 <ServiceItem
                   icon={<FaCogs size={20} />}
                   title="Custom Solutions"
                   description="Targeted digital solutions for automation challenges."
+                  href="#"
+
                 />
                 <ServiceItem
                   icon={<FaFileAlt size={20} />}
                   title="Intelligent Form & Data Capture"
                   description="Simplify data collection and integration."
+                  href="#"
+
                 />
                 <ServiceItem
                   icon={<FaBrain size={20} />}
                   title="AI-Powered Workflow Automation"
                   description="Automate complex enterprise processes."
+                  href="#"
+
                 />
                 <ServiceItem
                   icon={<FaLink size={20} />}
                   title="System Integration & Support"
                   description="End-to-end support and seamless integration."
+                  href="#"
+
                 />
               </MobileAccordion>
+
+              {/* Contact Us Button for Mobile */}
+              <li className="pt-4">
+                <a
+                  href="mailto:faris@safify.tech"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-sm hover:shadow-md w-full justify-center"
+                >
+                  <FaEnvelope className="text-base" />
+                  <span>Contact Us</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -384,15 +434,17 @@ function ProductItem({ href, icon, title, description, isActive = false }: Produ
 }
 
 // Reusable component for service items
-function ServiceItem({ icon, title, description }: ServiceItemProps) {
+function ServiceItem({ icon, title, description, href }: ServiceItemProps) {
   return (
-    <div className="flex w-full cursor-pointer items-start rounded-lg p-3 hover:bg-gray-100">
-      <div className="mt-1 flex-shrink-0 text-primary">{icon}</div>
-      <div className="ml-4">
-        <p className="font-semibold text-gray-900">{title}</p>
-        <p className="text-sm text-gray-600">{description}</p>
+    <Link href={href} passHref>
+      <div className="flex w-full cursor-pointer items-start rounded-lg p-3 hover:bg-gray-100 transition-colors">
+        <div className="mt-1 flex-shrink-0 text-primary">{icon}</div>
+        <div className="ml-4">
+          <p className="font-semibold text-gray-900">{title}</p>
+          <p className="text-sm text-gray-600">{description}</p>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
