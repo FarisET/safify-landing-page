@@ -134,7 +134,7 @@ export default function Header() {
                   <div className="grid grid-cols-2 gap-4 p-4">
 
                     <ProductItem
-                      href="/#audit-and-compliance"
+                      href="/#compliance-and-audit"
                       icon={<Scale size={20} />}
                       title="Audit & Compliance"
                       description="Streamline site audits and automate data collection to ensure compliance adherence."
@@ -207,19 +207,19 @@ export default function Header() {
                       icon={<Scale size={20} />}
                       title="Regulatory Audit Automation"
                       description="Digitize and automate audits, inspections, and compliance checks."
-                      href="#multi-framework-audit"
+                      href="/#multi-framework-audit"
                     />
                     <ServiceItem
                       icon={<FaFileAlt size={20} />}
                       title="Intelligent Form & Data Capture"
                       description="Create dynamic forms with automated validation."
-                      href='#features_form_builder'
+                      href='/#features_form_builder'
                     />
                     <ServiceItem
                       icon={<FaShieldAlt size={20} />}
                       title="Industry-Specific Solutions"
                       description="Tailored audit templates and checklists by sector."
-                      href="#industries"
+                      href="/#industries"
                     />
 
                     {/* divider */}
@@ -256,7 +256,7 @@ export default function Header() {
               {/* Contact Us Button */}
               <li className="ml-4">
                 <a
-                  href="mailto:faris@safify.tech"
+                  href="mailto:faris@safify.tech;sales@safify.tech"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-sm hover:shadow-md"
                 >
                   <FaEnvelope className="text-base" />
@@ -312,7 +312,7 @@ export default function Header() {
             <ul className="flex flex-col space-y-2">
               <MobileAccordion title="Products">
                 <ProductItem
-                  href="/#audit-and-compliance"
+                  href="/#compliance-and-audit"
                   icon={
                     <Scale size={20} />
                   }
@@ -349,13 +349,22 @@ export default function Header() {
                   icon={<FaTasks size={20} />}
                   title="Compliance & Audit Automation"
                   description="Digitize audits and compliance checks."
-                  href="#"
+                  href="/#multi-framework-audit"
 
                 />
+               
                 <ServiceItem
+                  icon={<FaFileAlt size={20} />}
+                  title="Intelligent Form & Data Capture"
+                  description="Simplify data collection and integration."
+                  href="/#features_form_builder"
+
+                />
+
+<ServiceItem
                   icon={<FaHandsHelping size={20} />}
                   title="Consultation & Process Optimization"
-                  description="We design a strategic roadmap for your enterprise."
+                  description="We design agentic workflows for your enterprise."
                   href="#"
 
                 />
@@ -367,16 +376,9 @@ export default function Header() {
 
                 />
                 <ServiceItem
-                  icon={<FaFileAlt size={20} />}
-                  title="Intelligent Form & Data Capture"
-                  description="Simplify data collection and integration."
-                  href="#"
-
-                />
-                <ServiceItem
                   icon={<FaBrain size={20} />}
                   title="AI-Powered Workflow Automation"
-                  description="Automate complex enterprise processes."
+                  description="AI workflows to automate redundant enterprise processes."
                   href="#"
 
                 />
@@ -392,7 +394,7 @@ export default function Header() {
               {/* Contact Us Button for Mobile */}
               <li className="pt-4">
                 <a
-                  href="mailto:faris@safify.tech"
+                  href="mailto:faris@safify.tech;sales@safify.tech"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-sm hover:shadow-md w-full justify-center"
                 >
                   <FaEnvelope className="text-base" />

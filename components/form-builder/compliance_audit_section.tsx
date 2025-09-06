@@ -29,7 +29,7 @@ export default function ComplianceAuditSection() {
   ];
 
   return (
-    <section className="w-full min-h-[520px] py-30 grid place-items-center p-4 sm:p-6 bg-gradient-to-br from-slate-50 to-slate-100 relative">
+    <section id="compliance-and-audit" className="w-full min-h-[520px] py-30 grid place-items-center p-4 sm:p-6 bg-gradient-to-br from-slate-50 to-slate-100 relative">
       <div className="w-full mx-auto">
         {/* Header */}
         <div className="mb-8 sm:mb-12 md:text-center px-4">

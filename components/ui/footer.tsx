@@ -47,58 +47,35 @@ export default function Footer({ border = false }: { border?: boolean }) {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  // className="text-gray-600 transition hover:text-gray-900"
+                  className="text-gray-600 transition hover:text-gray-900"
                   // href="#workflow-automation"
-                  className="text-gray-400 cursor-not-allowed pointer-events-none"
-                  href="#"
+                  href="/#features_form_builder"
                   aria-disabled="true"
                 >
-                  Workflow Automation
+                  Intelligent Data Collection
                 </a>
               </li>
               <li>
                 <a
-                  // className="text-gray-600 transition hover:text-gray-900"
+                   className="text-gray-600 transition hover:text-gray-900"
                   // href="#compliance-automation"
-                  className="text-gray-400 cursor-not-allowed pointer-events-none"
-                  href="#"
+                  href="/#industries"
                   aria-disabled="true"
                 >
-                  Compliance Automation
+                  Industries Specific Solutions
                 </a>
               </li>
               <li>
                 <a
-                  // className="text-gray-600 transition hover:text-gray-900"
+                   className="text-gray-600 transition hover:text-gray-900"
                   // href="#flexible-deployment"
-                  className="text-gray-400 cursor-not-allowed pointer-events-none"
-                  href="#"
+                  href="/#multi-framework-audit"
                   aria-disabled="true"
                 >
-                  Flexible Deployment
+                  Multi-Framework Support
                 </a>
               </li>
-              <li>
-                <a
-                  // className="text-gray-600 transition hover:text-gray-900"
-                  // href="#consultation"
-                  className="text-gray-400 cursor-not-allowed pointer-events-none"
-                  href="#"
-                  aria-disabled="true"
-                >
-                  Consultation
-                </a>
-              </li>
-              <li>
-                <a
-                  // className="text-gray-600 transition hover:text-gray-900"
-                  className="text-gray-400 cursor-not-allowed pointer-events-none"
-                  href="#"
-                  aria-disabled="true"
-                >
-                  Support & Training
-                </a>
-              </li>
+             
             </ul>
           </div>
 
@@ -106,12 +83,30 @@ export default function Footer({ border = false }: { border?: boolean }) {
           <div className="space-y-2 sm:col-span-6 md:col-span-2 lg:col-span-2">
             <h3 className="text-sm font-medium text-gray-800">Products</h3>
             <ul className="space-y-2 text-sm">
+              
               <li>
                 <a
                   className="text-gray-600 transition hover:text-gray-900"
+                  href="/#audit-and-compliance"
+                  aria-disabled="true"
+                >
+                  Audit & Compliance
+                </a>
+              </li>
+              <li>
+                <a
+                  className="text-gray-600 transition hover:text-gray-900"
+                  href="/#features_form_builder"
+                >
+                  Form Builder
+                </a>
+              </li>
+              <li>
+              <a
+                  className="text-gray-600 transition hover:text-gray-900"
                   href="/it-service-management"
                 >
-                  Safify ITSM
+                  IT Service Management
                 </a>
               </li>
               <li>
@@ -119,28 +114,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   className="text-gray-600 transition hover:text-gray-900"
                   href="/ehs-incident-management"
                 >
-                  Safify EHS
+                  EHS Management
                 </a>
-              </li>
-              <li>
-                <a
-                  // className="text-gray-600 transition hover:text-gray-900"
-                  // href="/form-builder"
-                  className="text-gray-400 cursor-not-allowed pointer-events-none"
-                  href="#"
-                  aria-disabled="true"
-                >
-                  Safify SAuditor
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="/form-builder"
-                >
-                  Safify FormBuilder
-                </a>
-              </li>
+                </li>
             </ul>
           </div>
 

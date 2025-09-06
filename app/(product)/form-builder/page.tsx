@@ -13,10 +13,11 @@ import UseCasesEhs from "@/components/UseCasesEhs";
 import HeroItsm from "@/components/itsm/HeroItsm";
 import InterfaceItsm from "@/components/itsm/InterfaceItsm";
 import FeaturesItsm from "@/components/itsm/FeaturesItsm";
-import HeroFormBuilder from "@/components/form-builder/HeroFormBuilder"
 import FeaturesFormBuilder from "@/components/form-builder/FeaturesFormBuilder";
 import BenefitsFormBuilder from "@/components/form-builder/BenefitsFormBuilder";
 import HowItWorksFB from "@/components/form-builder/HowItWorksFB";
+
+import HeroFormBuilder from "@/components/form-builder/HeroFormBuilder"
 import IndustrySolutions from "@/components/form-builder/IndustrySolutions";
 import MobilePWA from "@/components/form-builder/MobilePwa";
 import TriadicHealthcareDiagram from "@/components/triadic_link_diagram";
