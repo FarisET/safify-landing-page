@@ -88,7 +88,7 @@ const IndustrySolutions = () => {
         }
       ]
     },
-   
+
     {
       icon: HardHat,
       name: "Construction",
@@ -218,14 +218,25 @@ const IndustrySolutions = () => {
             return (
               <button
                 key={index}
-                className={`py-4 px-3 rounded-xl transition-all duration-300 text-center ${activeTab === index ? "tab-selected" : "tab-default"
-                  } ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+                className={`py-4 px-3 rounded-xl transition-all duration-300 text-center group
+                ${activeTab === index ? "tab-selected" : "tab-default"}
+                ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
                 onClick={() => setActiveTab(index)}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <TabIcon className={`w-6 h-6 mx-auto mb-2 ${activeTab === index ? "text-black" : "text-primary"}`} />
+                {/* Icon */}
+                <div
+                  className={`w-10 h-10 flex items-center justify-center mx-auto mb-2 rounded-lg 
+                  ${activeTab === index ? "bg-blue-100 text-black" : "bg-slate-100 text-primary"} 
+                  group-hover:bg-blue-200 group-hover:scale-105 transition-all`}
+                >
+                  <TabIcon className="w-6 h-6" />
+                </div>
+
+                {/* Label */}
                 <span className="font-medium text-sm">{industry.name}</span>
               </button>
+
             );
           })}
         </div>
@@ -240,7 +251,7 @@ const IndustrySolutions = () => {
                 <img
                   src={industries[activeTab].image}
                   alt={industries[activeTab].name}
-                  className="w-full h-full object-contain object-left-top"
+                  className="w-full h-full sm:object-contain object-left-top"
                   style={{
                     maxWidth: "100%",
                     maxHeight: "100%",
@@ -256,7 +267,7 @@ const IndustrySolutions = () => {
 
 
 
-            <div className="lg:w-1/2 md:px-8 px-6 flex flex-col items-start justify-start">
+            <div className="lg:w-1/2 md:px-8 px-6 flex flex-col items-start justify-start mt-3 lg:mt-0">
               <div className="flex items-start gap-3 mb-3">
                 <div className="p-2 rounded-lg bg-blue-100">
                   <IconComponent className="w-6 h-6 text-primary" />

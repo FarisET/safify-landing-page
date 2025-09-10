@@ -106,21 +106,26 @@ export default function AnalyticsChart() {
                         </div>
 
                         <div className="space-y-3">
+                            {/* Coverage */}
                             <div className="flex items-center justify-between">
-                                <div className="flex items-center justify-between">
-                                    <span className="text-xs text-slate-600">Coverage</span>
-                                    <span className="text-sm font-semibold text-green-600">98.5%</span>
-                                </div>
-                                <span className="text-xs text-slate-600">Avg. Time to Complete Audits</span>
+                                <span className="text-xs text-slate-600">Coverage</span>
+                                <span className="text-sm font-semibold text-green-600">98.5%</span>
+                            </div>
+
+                            {/* Time to Complete Audits */}
+                            <div className="flex items-center justify-between">
+                                <span className="text-xs text-slate-600">Time to Complete Audits</span>
                                 <span className="text-sm font-semibold text-slate-800">2.3s</span>
                             </div>
 
+                            {/* Reduced Audit Findings */}
                             <div className="flex items-center justify-between">
                                 <span className="text-xs text-slate-600">Reduced Audit Findings</span>
                                 <span className="text-sm font-semibold text-blue-600">65%</span>
                             </div>
                         </div>
                     </div>
+
 
                     {/* Category Breakdown */}
                     <div className="bg-slate-50 rounded-lg p-4">

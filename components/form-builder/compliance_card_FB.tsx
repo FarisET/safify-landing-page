@@ -40,7 +40,7 @@ export default function ComplianceTrackingCard() {
                         </div>
                     </div>
 
-                    {/* Compliance Progress */}
+                    {/* Compliance Progress
                     <div>
                         <div className="flex items-center justify-between mb-2">
                             <span className="text-sm font-medium text-slate-700">Compliance Progress</span>
@@ -49,7 +49,7 @@ export default function ComplianceTrackingCard() {
                         <div className="w-full bg-slate-100 rounded-full h-2">
                             <div className="bg-slate-300 h-2 rounded-full" style={{ width: "0%" }}></div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Action Buttons */}

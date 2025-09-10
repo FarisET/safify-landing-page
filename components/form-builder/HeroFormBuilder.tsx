@@ -45,8 +45,7 @@ const HeroFormBuilder = () => {
               Streamline Site Audits & Compliance with{' '}
               <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
                 Custom Forms
-              </span>{' '}
-              and Offline Access
+              </span>
             </h1>
 
             <p
@@ -54,7 +53,7 @@ const HeroFormBuilder = () => {
               data-aos="zoom-y-out"
               data-aos-delay={300}
             >
-              Create custom forms to digitize audits, inspections, and compliance reports with ease.
+              Digitize audits, inspections, and compliance reports with ease.
               Eliminate paper-based processes with the convenience of filling forms offline.
             </p>
 

@@ -9,6 +9,8 @@ import {
   MapPin,
   Image as ImageIcon,
   PenTool,
+  ClipboardList,
+  MousePointerClick
 } from "lucide-react";
 
 const responseTypes = [
@@ -21,6 +23,9 @@ const responseTypes = [
   { label: "Location", icon: MapPin },
   { label: "Media", icon: ImageIcon },
   { label: "Signature", icon: PenTool },
+  { label: "Audit", icon: ClipboardList },
+  { label: "Select", icon: MousePointerClick },
+ 
 ];
 
 export default function ResponseTypesCard() {
