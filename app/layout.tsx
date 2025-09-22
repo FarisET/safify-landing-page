@@ -24,7 +24,7 @@ export const metadata = {
       "Ensure workplace safety and streamline incident management with Safify.",
     images: [
       {
-        url: "/images/safify-og-banner.png",
+        url: "/images/og-banner.png",
         width: 1200,
         height: 630,
         alt: "Safify Logo",
@@ -36,7 +36,7 @@ export const metadata = {
     title: "Safify",
     description:
       "Ensure workplace safety and streamline incident management with Safify.",
-    images: ["/images/safify-og-banner.png"],
+    images: ["/images/og-banner.png"],
   },
   icons: {
     icon: "/favicon.ico",
