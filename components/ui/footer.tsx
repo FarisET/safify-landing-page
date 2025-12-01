@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Logo from "./logo";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
+import ContactFormWidget from '@/components/ContactFormWidget';
 
 export default function Footer({ border = false }: { border?: boolean }) {
   return (
@@ -13,7 +14,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
             : ""
             }`}
         >
-          {/* 1st block */}
+          {/* 1st block - Company Info */}
           <div className="space-y-4 text-sm text-gray-600 sm:col-span-12 lg:col-span-4">
             <div>
               <Logo />
@@ -41,128 +42,115 @@ export default function Footer({ border = false }: { border?: boolean }) {
             </div>
           </div>
 
-          {/* 2rd block */}
+          {/* 2nd block - Services */}
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h3 className="text-sm font-medium text-gray-800">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a
+                <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  // href="#workflow-automation"
                   href="/#features_form_builder"
                   aria-disabled="true"
                 >
                   Intelligent Data Collection
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                   className="text-gray-600 transition hover:text-gray-900"
-                  // href="#compliance-automation"
+                <Link
+                  className="text-gray-600 transition hover:text-gray-900"
                   href="/#industries"
                   aria-disabled="true"
                 >
                   Industries Specific Solutions
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                   className="text-gray-600 transition hover:text-gray-900"
-                  // href="#flexible-deployment"
+                <Link
+                  className="text-gray-600 transition hover:text-gray-900"
                   href="/#multi-framework-audit"
                   aria-disabled="true"
                 >
                   Multi-Framework Support
-                </a>
+                </Link>
               </li>
-             
             </ul>
           </div>
 
-          {/* 3nd block */}
+          {/* 3rd block - Products */}
           <div className="space-y-2 sm:col-span-6 md:col-span-2 lg:col-span-2">
             <h3 className="text-sm font-medium text-gray-800">Products</h3>
             <ul className="space-y-2 text-sm">
-              
               <li>
-                <a
+                <Link
                   className="text-gray-600 transition hover:text-gray-900"
                   href="/#audit-and-compliance"
                   aria-disabled="true"
                 >
                   Audit & Compliance
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="text-gray-600 transition hover:text-gray-900"
                   href="/#features_form_builder"
                 >
                   Form Builder
-                </a>
+                </Link>
               </li>
               <li>
-              <a
+                <Link
                   className="text-gray-600 transition hover:text-gray-900"
                   href="/it-service-management"
                 >
                   IT Service Management
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="text-gray-600 transition hover:text-gray-900"
                   href="/ehs-incident-management"
                 >
                   EHS Management
-                </a>
-                </li>
+                </Link>
+              </li>
             </ul>
           </div>
 
-
-
-          {/* 4th block */}
+          {/* 4th block - Company */}
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h3 className="text-sm font-medium text-gray-800">Company</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a
-                  // className="text-gray-600 transition hover:text-gray-900"
-                  // href="/about"
+                <Link
                   className="text-gray-400 cursor-not-allowed pointer-events-none"
                   href="#"
                   aria-disabled="true"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  // className="text-gray-600 transition hover:text-gray-900"
-                  // href="/contact"
+                <Link
                   className="text-gray-400 cursor-not-allowed pointer-events-none"
                   href="#"
                   aria-disabled="true"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  // className="text-gray-600 transition hover:text-gray-900"
-                  // href="/blog"
+                <Link
                   className="text-gray-400 cursor-not-allowed pointer-events-none"
                   href="#"
                   aria-disabled="true"
                 >
                   Blog
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* 5th block */}
+          {/* 5th block - Social */}
           <div className="pointer-events-auto space-y-2 sm:col-span-6 md:col-span-4 lg:col-span-2">
             <h3 className="text-sm font-medium">Social</h3>
             <ul className="flex gap-2">
@@ -171,6 +159,8 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   className="inline-flex cursor-pointer items-center justify-center text-primary transition hover:text-blue-600"
                   href="https://www.linkedin.com/company/safify/posts/"
                   aria-label="Linkedin"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <svg
                     className="h-8 w-7 cursor-pointer fill-current text-primary"
@@ -190,13 +180,17 @@ export default function Footer({ border = false }: { border?: boolean }) {
                 </a>
               </li>
             </ul>
+          </div>
 
+          {/* Contact Form - Full Width Below */}
+          <div className="sm:col-span-12 lg:col-span-6 lg:col-start-4">
+            <ContactFormWidget />
           </div>
         </div>
       </div>
 
       {/* Big text */}
-      <div className="relative -mt-16 h-60 w-full" aria-hidden="true">
+      <div className="relative sm:mt-22 md:-mt-16 h-60 w-full" aria-hidden="true">
         <div className="pointer-events-none absolute left-1/2 -z-10 -translate-x-1/2 text-center text-[120px] font-bold leading-none before:bg-gradient-to-b before:from-gray-200 before:to-gray-100/30 before:to-80% before:bg-clip-text before:text-transparent before:content-['Safify'] after:absolute after:inset-0 after:bg-gray-300/70 after:bg-clip-text after:text-transparent after:mix-blend-darken after:content-['Safify'] after:[text-shadow:0_1px_0_white] sm:text-[200px] md:text-[348px]"></div>
         {/* Glow */}
         <div
