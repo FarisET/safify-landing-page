@@ -90,7 +90,7 @@ export default function ContactFormWidget() {
   return (
     <div className="pointer-events-auto space-y-4">
       <h3 className="text-sm font-medium">Get in Touch</h3>
-      <form onSubmit={handleSubmit} className="space-y-3">
+      <form id='contact-form' onSubmit={handleSubmit} className="space-y-3">
         {/* Name Fields */}
         <div className="grid grid-cols-2 gap-3">
           <input
