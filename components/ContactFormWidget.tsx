@@ -20,14 +20,17 @@ export default function ContactFormWidget() {
     });
   };
 
-  const handleFormReset = () => {
+  const handleFormReset = (clearStatus = true) => {
     setFormData({
       firstName: '',
       lastName: '',
       email: '',
       message: ''
     });
-    setStatus('');
+    // Only clear status if explicitly told to, or if we are resetting the whole form
+    if (clearStatus) {
+        setStatus('');
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -43,7 +46,6 @@ export default function ContactFormWidget() {
       return;
     }
 
-    // Ensure key is available before sending, though the env fix should solve this
     if (!key) {
       console.error('Authentication key is missing');
       setStatus('error');
@@ -55,23 +57,33 @@ export default function ContactFormWidget() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'x-api-key': key // Key is used directly
+          'x-api-key': key 
         },
         body: JSON.stringify(formData)
       });
 
       if (response.ok) {
+        // 1. SET STATUS TO SUCCESS (THIS RENDERS THE MESSAGE)
         setStatus('success');
-        // Clear the form on successful submission
-        handleFormReset(); 
-        setTimeout(() => setStatus(''), 5000); // Clear success message after 5 seconds
+        
+        // 2. DELAY THE RESET: After 5 seconds, clear the form data AND the status
+        setTimeout(() => { 
+          // Reset data but keep status 'success' while we do it.
+          // We call the handleFormReset logic directly here to clear the form data
+          setFormData({ firstName: '', lastName: '', email: '', message: '' }); 
+          // Then, clear the status
+          setStatus('');
+        }, 5000); 
+        
       } else {
         console.error('Webhook returned status:', response.status);
         setStatus('error');
+        setTimeout(() => setStatus(''), 5000);
       }
     } catch (error) {
       setStatus('error');
       console.error('Form submission error:', error);
+      setTimeout(() => setStatus(''), 5000);
     }
   };
 
@@ -138,7 +150,7 @@ export default function ContactFormWidget() {
           <div className="flex space-x-2">
             <button 
               type="button" // Important: prevents form submission
-              onClick={handleFormReset} 
+              onClick={() => handleFormReset(true)} // Pass true to also clear status if needed
               className="inline-flex items-center rounded-md border border-gray-300 bg-white px-3 py-1 text-xs font-medium text-gray-700 shadow-sm transition hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
             >
               Cancel
