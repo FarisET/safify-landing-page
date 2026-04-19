@@ -90,7 +90,7 @@ const HomeHero = () => {
         </p>
 
         {/* CTAs */}
-        <div
+        {/* <div
           data-reveal
           className="animate-fade-up mt-10 flex flex-wrap gap-4"
         >
@@ -107,7 +107,7 @@ const HomeHero = () => {
           >
             See Products
           </Link>
-        </div>
+        </div> */}
 
         {/* Stats row */}
         {/* <div
