@@ -183,9 +183,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
           </div>
 
           {/* Contact Form - Full Width Below */}
-          <div className="sm:col-span-12 lg:col-span-6 lg:col-start-4">
+          {/* <div className="sm:col-span-12 lg:col-span-6 lg:col-start-4">
             <ContactFormWidget />
-          </div>
+          </div> */}
         </div>
       </div>
 
