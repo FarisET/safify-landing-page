@@ -36,7 +36,7 @@ export default function SafifyLaunchCard() {
                   </div>
                   <div className="relative w-full h-full rounded-[32px] overflow-hidden bg-[#1A1F2B]">
                     <Image
-                      src="/images/safeInspect-barcode-screen-resized.png"
+                      src="/images/inpsection_screen_pic.png"
                       alt="SafeInspect Barcode Scanning Screen Content"
                       layout="fill"
                       objectFit="cover"
